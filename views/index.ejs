@@ -1,0 +1,155 @@
+<%
+    loopParagraphs = function(pars) {
+        pars.forEach(function(para) { %>
+            <p>
+                <%= para %>
+            </p>
+        <% })
+    };
+
+    loopLinks = function(pars) {
+        pars.forEach(function(para) { %>
+            <a>
+                <%= para %>
+            </a> <% })
+    };
+
+    infoLine = function(key, val) {
+        %>
+            <div class="info-line">
+                <span>
+                    <%= key %>
+                </span>
+                <span>
+                    <%= val %>
+                </span>
+            </div>
+        <%
+    }
+
+    makeDroplet = function(num, textBelow) {
+        %>
+            <div class="droplet">
+                <span><%= num %></span>
+                <img src="lang-toggle-purple.svg" alt="kropla">
+            </div>
+            <p>
+                <%= textBelow %>
+            </p>
+        <%
+    }
+%>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="page-brown page-1">
+            <div class="header">
+                <div class="header__left">
+                    <img src="womb.svg" alt="Pestka"></img>
+                    <span class="header-title__title">
+                        <%= text.p1.mainTitle %>
+                    </span>
+                </div>
+                <div class="header__right">
+                    <img src="lang-toggle.svg"></img>
+                    <span>en</span>
+                </div>
+            </div >
+            <p class="content with-padding"> 
+                <%= text.p1.mainText %>
+                <strong>
+                    <%= text.p1.textBold %>
+                </strong>
+            </p>
+            <div>
+                <img src="apricot.png" class="apricots" alt="morele"></img>
+            </div>
+        </div>
+        <div class="page-violet page-2">
+            <div class="content with-padding">
+                <% loopParagraphs(text.p2.paragraphs) %>
+                <p class='footer'>
+                    <%= text.p2.footer %>
+                </p>
+            </div>
+        </div>
+        <div class="page-brown page-3">
+            <div class="page-3__header">
+                <%= text.p3.header %>
+            </div>
+            <div class="page-3__content with-padding">
+                <% loopParagraphs(text.p3.paragraphsPt1) %>
+                <% makeDroplet(1, text.p3.belowDrop1) %>
+                <% makeDroplet(2, text.p3.belowDrop2) %>
+                <% makeDroplet(3, text.p3.belowDrop3) %>
+            </div>
+        </div>
+        <div class="page-violet page-4">
+            <div class="page-4__header">
+                <%= text.p4.header %>
+            </div>
+            <img class="surprise with-padding" src="surprise.png" alt="zaskoczenie">
+            <div class="with-padding">
+                <% loopParagraphs(text.p4.paragraphs) %>
+            </div>
+        </div>
+        <div class="page-brown page-5">
+            <div class="page-5__header">
+                <%= text.p5.header %>
+            </div>
+            <img src="family.png" alt="Rodzina" class="family with-padding">
+            <div class="with-padding">
+                <% loopParagraphs(text.p5.paragraphs) %>
+                <% makeDroplet(1, text.p5.belowDrop1) %>
+                <% makeDroplet(2, text.p5.belowDrop2) %>
+                <% makeDroplet(3, text.p5.belowDrop3) %>
+                <%= text.p5.lastParagraph %>
+            </div>
+        </div>
+        <div class="page-violet page-6">
+            <div class="page-6__header">
+                <%= text.p6.header %>
+            </div>
+            <p class="with-padding">
+                <%= text.p6.dOffice %>
+            </p>
+            <div class="page-6__links">
+                <img src="office.png" alt="Gabinet Lekarski" class="office">
+                <% loopLinks(text.p6.offices) %>
+            </div>
+        </div>
+        <div class="page-brown page-7">
+            <div class="page-7__header">
+                <%= text.p7.header %>
+            </div>
+            <div class="with-padding">
+                <% infoLine(text.infoKeys.phone, "+48 733 083 370") %>
+                <div class="info-line">
+                    <span>E-mail</span>
+                    <a href="mailto:<%= text.infoVals.email %>"><%= text.infoVals.email %></a>
+                </div>
+                <div class="social-margin social-line">
+                    <span class="icon icon-insta"></span>
+                    <span>@bezpestkowe</span>
+                </div>
+                <div class="social-margin social-line">
+                    <span class="icon icon-fb"></span>
+                    <span>Dolacz do nas na facebooku</span>
+                </div>
+                <a class="social-margin support" href="https://zrzutka.pl/69j8ah">
+                    <%= text.p7.support %>
+                </a>
+            </div>
+        </div>
+        <script src="<%= BROWSER_REFRESH %>"></script>
+    </body>
+</html>
