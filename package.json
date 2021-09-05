@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-refresh index.js ",
+    "dev": "ENV=dev browser-refresh index.js ",
+    "build": "node build.js",
+    "start": "ENV=prod node index.js",
     "sass": "sass --watch index.scss public/index.css"
   },
   "keywords": [],

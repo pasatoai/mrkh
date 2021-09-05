@@ -155,6 +155,8 @@
                 </a>
             </div>
         </div>
-        <script src="<%= BROWSER_REFRESH %>"></script>
+        <% if (BROWSER_REFRESH) { %>
+            <script src="<%= BROWSER_REFRESH %>"></script>
+        <% } %>
     </body>
 </html>
