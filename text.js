@@ -93,6 +93,7 @@ const PL = {
   },
   p3: {
     header: `Czym jest zespół MRKH i z czym się wiąże?`,
+    fileName: `broszura_pl.pdf`,
     paragraphsPt1: [
       `
         Zespół MRKH to uwarunkowana

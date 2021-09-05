@@ -126,6 +126,35 @@ body {
     font-size: 2em;
     border-bottom: var(--border-violet);
     padding: 10px 15px;
+    position: relative;
+
+    .page_3__pdf-container {
+      font-size: 0.5em;
+      text-decoration: none;
+      color: var(--color-violet);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 10px;
+      bottom: 0px;
+      transform: translateY(50%);
+
+      img {
+        position: absolute;
+        height: 100%;
+      }
+      span {
+        font-family: fontello;
+        z-index: 2;
+      }
+      .dl-anchor:before {
+        content: "\f02e";
+      }
+    }
   }
 }
 

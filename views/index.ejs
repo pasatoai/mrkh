@@ -85,6 +85,11 @@
         <div class="page-brown page-3">
             <div class="page-3__header">
                 <%= text.p3.header %>
+                <a href="<%= text.p3.fileName %>" download="<%= text.p3.fileName %>" class='page_3__pdf-container'>
+                    <img src="lang-toggle.svg" alt="Pobierz pdf">
+                    <span class="dl-anchor"></span>
+                    <span>pdf</span>
+                </a>
             </div>
             <div class="page-3__content with-padding">
                 <% loopParagraphs(text.p3.paragraphsPt1) %>
