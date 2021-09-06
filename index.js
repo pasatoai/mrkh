@@ -1,6 +1,6 @@
 const express = require("express");
-const { PL } = require("./text");
-const langs = { PL };
+const { PL, EN } = require("./text");
+const langs = { PL, EN };
 const IS_DEV = process.env.ENV === "prod";
 const PORT = process.env.PORT || 9000;
 
@@ -15,8 +15,8 @@ const renderDev = (lang) => (req, res) =>
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.get("/pl", renderDev("PL"));
-app.get("/en", renderDev("PL"));
+app.get("/index.html", renderDev("PL"));
+app.get("/index_en.html", renderDev("EN"));
 app.get("*", renderDev("PL"));
 
 app.listen(PORT, () => {

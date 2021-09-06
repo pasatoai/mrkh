@@ -95,8 +95,6 @@ body {
 .page-1 .header__right span {
   font-weight: bolder;
   position: absolute;
-  top: 35%;
-  left: 37%;
 }
 .page-1 .content {
   font-size: var(--font-medium);

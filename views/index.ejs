@@ -59,10 +59,10 @@
                         <%= text.p1.mainTitle %>
                     </span>
                 </div>
-                <div class="header__right">
+                <a href="<%= text.toggleHref %>" class="header__right">
                     <img src="lang-toggle.svg"></img>
-                    <span>en</span>
-                </div>
+                    <span><%= text.toggle %></span>
+                </a>
             </div >
             <p class="content with-padding"> 
                 <%= text.p1.mainText %>
@@ -148,7 +148,9 @@
                 </div>
                 <div class="social-margin social-line">
                     <span class="icon icon-fb"></span>
-                    <span>Dolacz do nas na facebooku</span>
+                    <span>
+                        <%= text.infoKeys.joinAtFb %>
+                    </span>
                 </div>
                 <a class="social-margin support" href="https://zrzutka.pl/69j8ah">
                     <%= text.p7.support %>
