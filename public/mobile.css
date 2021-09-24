@@ -1,45 +1,3 @@
-:root {
-  --color-violet: rgb(102, 20, 181);
-  --color-brown: rgb(240, 231, 222);
-  --color-orange: #f6892a;
-  --border-violet: 1.5px solid var(--color-violet);
-  --border-brown: 1.5px solid var(--color-brown);
-  --font-medium: 1.2em;
-  --font-medium-sm: 0.9em;
-  --header-title-h: 69px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: sofiapro-light;
-  src: url("/sofiapro-light.otf") format("opentype");
-}
-@font-face {
-  font-family: fontello;
-  src: url("/fontello.ttf") format("truetype");
-}
-body {
-  font-family: sofiapro-light;
-  margin: 0;
-}
-
-.page-brown {
-  background-color: var(--color-brown);
-  color: var(--color-violet);
-}
-
-.page-violet {
-  background-color: var(--color-violet);
-  color: var(--color-brown);
-}
-
-.with-padding {
-  padding: 25px 20px;
-}
-
 .droplet {
   display: flex;
   justify-content: center;
@@ -61,9 +19,6 @@ body {
   transform: rotate(90deg);
 }
 
-.page-1 {
-  height: 100vh;
-}
 .page-1 .header {
   height: var(--header-title-h);
   border-bottom: var(--border-violet);
@@ -122,19 +77,23 @@ body {
   position: relative;
 }
 .page-3 .page-3__header .page_3__pdf-container {
-  font-size: 0.5em;
   text-decoration: none;
   color: var(--color-violet);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 10px;
-  bottom: 0px;
-  transform: translateY(50%);
+}
+@media (max-width: 768px) {
+  .page-3 .page-3__header .page_3__pdf-container {
+    font-size: 0.5em;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    transform: translateY(50%);
+  }
 }
 .page-3 .page-3__header .page_3__pdf-container img {
   position: absolute;
@@ -176,13 +135,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.page-6 .page-6__links .dr-links {
+  display: flex;
+  flex-direction: column;
+}
 .page-6 .page-6__links a {
   font-size: 1.3em;
-  width: 40%;
   padding: 10px;
   border: 2px solid var(--color-brown);
-  margin: 10px 0px;
   text-align: center;
+  margin: 20px 0px;
 }
 .page-6 .office {
   width: 60%;
@@ -209,4 +171,4 @@ body {
   font-weight: bolder;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=mobile.css.map */

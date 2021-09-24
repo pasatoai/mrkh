@@ -182,9 +182,11 @@ const PL = {
         prowadzącą/-ym. Którąkolwiek z opcji
         wybierzesz, udany i satysfakcjonujący
         seks pomimo zespołu MRKH jest możliwy.
-        Jego jakość nie zależy od tego, czy Twoja
-        pochwa ma 4 czy 7 centymetrów, ale od
-        tego, z kim decydujesz się współżyć.
+        <span class="with-bold">
+          Jego jakość nie zależy od tego, czy Twoja
+          pochwa ma 4 czy 7 centymetrów, ale od
+          tego, z kim decydujesz się współżyć.
+        </span>
         `,
     ],
     belowDrop1: `
@@ -220,9 +222,12 @@ const PL = {
         bycia bezpestkową, ponieważ są osoby,
         które mogą tego nie zrozumieć i/lub
         zareagować w negatywny sposób.
-        Pamiętaj, że najważniejszy jest Twój
+        Pamiętaj, że najważniejszy jest 
+        <span class="with-bold">
+        Twój
         komfort i bezpieczeństwo, i że to Ty
         wyznaczasz granice.
+        </span>
         `,
       `
         Jeśli potrzebujesz porozmawiać z kimś o
@@ -259,8 +264,11 @@ const PL = {
         stanowi o czyjejkolwiek wartości. Staramy
         się unikać określeń: “cierpi”, “choruje” lub
         “zdiagnozowano zespół MRKH”. Zamiast
-        tego mówimy, że zespół MRKH się po
+        tego mówimy, że 
+        <span class="with-bold">
+        zespół MRKH się po
         prostu ma.
+        </span>
         `,
       `
         Najważniejszą kwestią sojusznictwa (tj.
@@ -274,9 +282,13 @@ const PL = {
         zadanie pytania (któremu powinien
         towarzyszyć komunikat o możliwości
         wycofania się z rozmowy na warunkach
-        bezpestkowej): “Czy chciałabyś o tym
+        bezpestkowej): 
+        <span class="with-bold">
+        “Czy chciałabyś o tym
         porozmawiać i czy czujesz się z tym
-        komfortowo?”. Ważne jest dawanie
+        komfortowo?”. 
+        </span>
+        Ważne jest dawanie
         przestrzeni, nie narzucanie się z
         nadmierną ilością pytań oraz
         respektowanie wyznaczonych granic.
@@ -286,8 +298,11 @@ const PL = {
         bezpestkową tylko dla siebie.
         `,
       `
-        Niezwykle ważnym aspektem jest sposób
-        przekazywania informacji na temat
+        Niezwykle ważnym aspektem jest 
+        <span class="with-bold">
+        sposób przekazywania informacji 
+        </span>
+        na temat
         zespołu MRKH przez lekarza/-kę
         prowadzącego/-cą. Nie można powiedzieć
         pacjentce w pośpiechu, że nie będzie
@@ -317,7 +332,10 @@ const PL = {
         MRKH (do momentu rozpoznania)
         przebiega w ten sam sposób, jak u osób
         pestkowych, wobec czego bezpestkowe
-        zazwyczaj przyjmują kobiece role płciowe
+        zazwyczaj 
+        <span class="with-bold">
+        przyjmują kobiece role płciowe
+        </span>
         (ze względu na swój wygląd zewnętrzny, a
         nie zespół MRKH).
         Rolą terapeutów/-ek jest również
@@ -336,10 +354,15 @@ const PL = {
         funkcjonalność różnią się od siebie. Jeśli
         obawiasz się, że partner/-ka seksualny/-a
         rozpozna, że Twoja pochwa została
-        wytworzona, zapewniamy, że nie ma
-        powodów do zmartwień — z laickiego
-        punktu widzenia nie jesteśmy w stanie
-        rozpoznać, czy mamy kontakt seksualny z
+        wytworzona, zapewniamy, że 
+        <span class="with-bold">
+        nie ma powodów do zmartwień 
+        </span>
+        — z laickiego punktu widzenia 
+        <span class="with-bold">
+        nie jesteśmy w stanie rozpoznać, 
+        </span>
+        czy mamy kontakt seksualny z
         osobą, która urodziła się z pochwą, czy z
         osobą, która ma neo-waginę.
         Kolejną konsekwencją związaną z byciem
@@ -348,9 +371,13 @@ const PL = {
         momencie rozpoznania zespołu MRKH ta
         informacja jest trudniejsza do przyjęcia
         przez rodziców/opiekunów osób
-        bezpestkowych. Oczywiście posiadanie
+        bezpestkowych. Oczywiście 
+        <span class="with-bold">
+        posiadanie
         zespołu MRKH nie wyklucza zostania
-        rodzicem (oczywiście o ile tego w ogóle
+        rodzicem 
+        </span>
+        (oczywiście o ile tego w ogóle
         chcemy). Istnieją na to różne sposoby:
         `,
     ],

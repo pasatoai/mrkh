@@ -7,7 +7,7 @@
     "dev": "ENV=dev browser-refresh index.js ",
     "build": "node build.js",
     "start": "ENV=prod node index.js",
-    "sass": "sass --watch index.scss public/index.css"
+    "sass": "sass --watch css:public"
   },
   "keywords": [],
   "author": "",

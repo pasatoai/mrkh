@@ -1,0 +1,32 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4182068, 2021-09-18T12:30:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Monarcha-Bold by isaco
+ * URL: https://www.myfonts.com/fonts/isaco/monarcha/bold/
+ * 
+ * Webfont: Monarcha by isaco
+ * URL: https://www.myfonts.com/fonts/isaco/monarcha/regular/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2010 by Isac Rodrigues. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+@font-face {
+  font-family: "Monarcha";
+  src: url("webFonts/Monarcha/font.woff2") format("woff2"),
+    url("webFonts/Monarcha/font.woff") format("woff");
+}
+@font-face {
+  font-family: "Monarcha-Bold";
+  src: url("webFonts/MonarchaBold/font.woff2") format("woff2"),
+    url("webFonts/MonarchaBold/font.woff") format("woff");
+}
