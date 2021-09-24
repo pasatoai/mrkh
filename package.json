@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "ENV=dev browser-refresh index.js ",
-    "build": "node build.js",
     "start": "ENV=prod node index.js",
-    "sass": "sass --watch css:public"
+    "sass": "sass --watch css:public",
+    "build": "cpy public/ dist/ --parents"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,8 @@
   "devDependencies": {
     "autoprefixer": "^10.3.3",
     "browser-refresh": "^1.7.3",
+    "cpy": "^8.1.2",
+    "cpy-cli": "^3.1.1",
     "postcss": "^8.3.6",
     "pug": "^3.0.2",
     "tailwind": "^4.0.0",
