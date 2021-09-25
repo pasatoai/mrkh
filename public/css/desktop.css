@@ -140,18 +140,6 @@
   .page-3 .page-3__content .droplets-section .droplets-section__left > div {
     display: flex;
   }
-  .page-3 .page-3__content .droplets-section .droplets-section__left .droplet {
-    padding-left: 0px;
-  }
-  .page-3 .page-3__content .droplets-section .droplet span {
-    left: 28.5%;
-  }
-  .page-3 .page-3__content .droplets-section .droplets-section__left div:nth-child(2) .droplet span {
-    top: 37%;
-  }
-  .page-3 .page-3__content .droplets-section .droplets-section__left div:last-child .droplet span {
-    top: 27%;
-  }
 }
 @media (min-width: 768px) {
   .page-3 .page-3__content .dildo {

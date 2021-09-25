@@ -45,3 +45,17 @@ body {
 .with-padding {
   padding: 25px 20px;
 }
+
+.droplet {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  span {
+    position: absolute;
+    z-index: 2;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: var(--color-orange);
+  }
+}

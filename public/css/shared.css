@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: fontello;
-  src: url("/webFonts/fontello.ttf") format("truetype");
+  src: url("/fontello.ttf") format("truetype");
 }
 body {
   font-family: "Monarcha";
@@ -41,6 +41,18 @@ body {
 
 .with-padding {
   padding: 25px 20px;
+}
+
+.droplet img {
+  width: 60px;
+  height: 60px;
+}
+.droplet span {
+  position: absolute;
+  z-index: 2;
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: var(--color-orange);
 }
 
 /*# sourceMappingURL=shared.css.map */
