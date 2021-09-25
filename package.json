@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm-run-all --parallel sass http-server",
-    "start": "http-server",
+    "serve": "http-server",
     "sass": "sass --watch scss:public/css",
     "ejs": "node textTransform.js"
   },

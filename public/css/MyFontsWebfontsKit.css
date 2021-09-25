@@ -22,11 +22,11 @@
 
 @font-face {
   font-family: "Monarcha";
-  src: url("webFonts/Monarcha/font.woff2") format("woff2"),
-    url("webFonts/Monarcha/font.woff") format("woff");
+  src: url("../webFonts/Monarcha/font.woff2") format("woff2"),
+    url("../webFonts/Monarcha/font.woff") format("woff");
 }
 @font-face {
   font-family: "Monarcha-Bold";
-  src: url("webFonts/MonarchaBold/font.woff2") format("woff2"),
-    url("webFonts/MonarchaBold/font.woff") format("woff");
+  src: url("../webFonts/MonarchaBold/font.woff2") format("woff2"),
+    url("../webFonts/MonarchaBold/font.woff") format("woff");
 }

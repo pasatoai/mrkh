@@ -31,7 +31,7 @@
         %>
             <div class="droplet">
                 <span><%= num %></span>
-                <img src="lang-toggle-purple.svg" alt="kropla">
+                <img src="images/lang-toggle-purple.svg" alt="kropla">
             </div>
             <p>
                 <%= textBelow %>
@@ -48,22 +48,22 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="MyFontsWebfontsKit.css">
-        <link rel="stylesheet" href="shared.css">
-        <link rel="stylesheet" href="mobile.css">
-        <link rel="stylesheet" href="desktop.css">
+        <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">
+        <link rel="stylesheet" href="css/shared.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
     </head>
     <body>
         <div class="page-brown page-1">
             <div class="header page-header">
                 <div class="header__left">
-                    <img src="womb.svg" alt="Pestka"></img>
+                    <img src="images/womb.svg" alt="Pestka"></img>
                     <span class="header-title__title">
                         <%= text.p1.mainTitle %>
                     </span>
                 </div>
                 <a href="<%= text.toggleHref %>" class="header__right">
-                    <img src="lang-toggle.svg"></img>
+                    <img src="images/lang-toggle.svg"></img>
                     <span><%= text.toggle %></span>
                 </a>
             </div >
@@ -73,7 +73,7 @@
                     <%= text.p1.textBold %>
                 </span>
             </p>
-            <img src="apricot.png" class="apricots" alt="morele"></img>
+            <img src="images/apricot.png" class="apricots" alt="morele"></img>
         </div>
         <div class="page-violet page-2">
             <div class="content with-padding">
@@ -82,13 +82,13 @@
                     <%= text.p2.footer %>
                 </p>
             </div>
-            <img hidden class="kobieta" src="desktop/statue.png" alt="Kobieta">
+            <img hidden class="kobieta" src="images/statue.png" alt="Kobieta">
         </div>
         <div class="page-brown page-3">
             <div class="page-3__header page-header">
                 <%= text.p3.header %>
                 <a href="<%= text.p3.fileName %>" download="<%= text.p3.fileName %>" class='page_3__pdf-container'>
-                    <img src="lang-toggle.svg" alt="Pobierz pdf">
+                    <img src="images/lang-toggle.svg" alt="Pobierz pdf">
                     <span class="dl-anchor"></span>
                     <span>pdf</span>
                 </a>
@@ -103,7 +103,7 @@
                             <%= text.p3.paragraphsPt1[1] %>
                         </p>
                     </section>
-                    <img hidden class="anatomy" src="desktop/anatomy.png" alt="Anatomia">
+                    <img hidden class="anatomy" src="images/anatomy.png" alt="Anatomia">
                 </section>
                 <section class="marrow-section">
                     <section class="marrow-section-ps">
@@ -120,7 +120,7 @@
                             <%- text.p3.paragraphsPt1[5] %>
                         </p>
                     </section>
-                    <img hidden class="marrow" src="desktop/marrow.png" alt="Komorka">
+                    <img hidden class="marrow" src="images/marrow.png" alt="Komorka">
                 </section>
                 <section class="droplets-section">
                     <div class="droplets-section__left">
@@ -134,7 +134,7 @@
                             <% makeDroplet(3, text.p3.belowDrop3) %>
                         </div>
                     </div>
-                    <img hidden class="dildo" src="desktop/dildo.png" alt="Dildo">
+                    <img hidden class="dildo" src="images/dildo.png" alt="Dildo">
                 </section>
             </div>
         </div>
@@ -142,7 +142,7 @@
             <div class="page-4__header page-header">
                 <%= text.p4.header %>
             </div>
-            <img class="desktop-hidden surprise with-padding" src="surprise.png" alt="zaskoczenie">
+            <img class="desktop-hidden surprise with-padding" src="images/surprise.png" alt="zaskoczenie">
             <div class="page-4__content with-padding">
                 <section class="surprise-section">
                     <section class="surprise-section-ps">
@@ -153,10 +153,10 @@
                             <%= text.p4.paragraphs[1] %>
                         </p>
                     </section>
-                    <img hidden class="d-surprise" src="surprise.png" alt="surprise.png">
+                    <img hidden class="d-surprise" src="images/surprise.png" alt="surprise.png">
                 </section>
                 <section class="cursor-section">
-                    <img hidden class="cursor" src="desktop/kursor.svg" alt="Kursor">
+                    <img hidden class="cursor" src="images/kursor.svg" alt="Kursor">
                     <p>
                         <%- text.p4.paragraphs[2] %>
                     </p>
@@ -170,7 +170,7 @@
                             <%- text.p4.paragraphs[4] %>
                         </p>
                     </section>
-                    <img hidden class="beads" src="desktop/beads.png" alt="beads">
+                    <img hidden class="beads" src="images/beads.png" alt="beads">
                 </section>
             </div>
         </div>
@@ -178,7 +178,7 @@
             <div class="page-5__header page-header">
                 <%= text.p5.header %>
             </div>
-            <img src="family.png" alt="Rodzina" class="family with-padding desktop-hidden">
+            <img src="images/family.png" alt="Rodzina" class="family with-padding desktop-hidden">
             <div class="page-5__content with-padding">
                 <section class="family-section">
                     <section class="family-section__left">
@@ -189,10 +189,10 @@
                             <%- text.p5.paragraphs[1] %>
                         </p>
                     </section>
-                    <img hidden class="family-d" src="desktop/family.png" alt="Rodzina">
+                    <img hidden class="family-d" src="images/family.png" alt="Rodzina">
                 </section>
                 <section class="droplets-section">
-                    <img hidden class="cursor" src="desktop/kursor.svg" alt="Kursor">
+                    <img hidden class="cursor" src="images/kursor.svg" alt="Kursor">
                     <div>
                         <% makeDroplet(1, text.p5.belowDrop1) %>
                         <% makeDroplet(2, text.p5.belowDrop2) %>
@@ -211,12 +211,12 @@
             </p>
             <section class="page-6__body with-padding">
                 <div class="page-6__links">
-                    <img src="office.png" alt="Gabinet Lekarski" class="office">
+                    <img src="images/office.png" alt="Gabinet Lekarski" class="office">
                     <section class="dr-links">
                         <% loopLinks(text.p6.offices) %>
                     </section>
                 </div>
-                <img hidden class="beads" src="desktop/beads.png" alt="beads">
+                <img hidden class="beads" src="images/beads.png" alt="beads">
             </section>
         </div>
         <div class="page-brown page-7">
@@ -244,7 +244,7 @@
                         <%= text.p7.support %>
                     </a>
                 </section>
-                <img hidden class="girl" src="desktop/girl.png" alt="Dziewczyna">
+                <img hidden class="girl" src="images/girl.png" alt="Dziewczyna">
             </div>
         </div>
     </body>
