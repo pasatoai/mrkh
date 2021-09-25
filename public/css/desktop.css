@@ -19,6 +19,11 @@
     align-items: center;
     justify-content: space-between;
   }
+  .page-header .box {
+    width: calc(var(--header-title-d-h) + 4px);
+    height: var(--header-title-d-h);
+    border-left: var(--border-brown);
+  }
 
   .page-1 {
     font-size: 1.5em;
@@ -73,6 +78,9 @@
   .page-3 .page-3__header {
     font-size: 2.5em;
     padding-right: 5px;
+  }
+  .page-3 .page-3__header .header__left {
+    width: calc(100% - var(--header-title-d-h));
   }
   .page-3 .page-3__header a {
     border-left: var(--border-violet);
@@ -157,8 +165,7 @@
     font-size: var(--font-small-d);
   }
   .page-4 .page-4__header {
-    width: calc(100% - var(--header-title-d-h) - 2px);
-    border-right: var(--border-brown);
+    padding-right: 0;
   }
   .page-4 .page-4__content {
     margin-right: calc(var(--header-title-d-h) + 2px);
@@ -225,9 +232,11 @@
   .page-5 {
     font-size: var(--font-small-d);
   }
+  .page-5 .box {
+    border-left: var(--border-violet);
+  }
   .page-5 .page-5__header {
-    width: calc(100% - var(--header-title-d-h) - 2px);
-    border-right: var(--border-violet);
+    padding-right: 0;
   }
   .page-5 img.family-d,
 .page-5 img.cursor {
@@ -253,6 +262,16 @@
 @media (min-width: 768px) {
   .page-6 {
     font-size: var(--font-small-d);
+  }
+  .page-6 .page-6__header {
+    padding-right: 0;
+  }
+  .page-6 .page-6__left {
+    border-right: var(--border-brown);
+    width: calc(100% - var(--header-title-d-h) - 2px);
+  }
+  .page-6 .page-6__title {
+    margin-top: 0;
   }
   .page-6 .page-6__body {
     display: flex;
@@ -280,14 +299,20 @@
     width: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 860px) {
+@media (min-width: 768px) and (max-width: 960px) {
   .page-6 .page-6__body .office {
-    height: 500px;
+    display: none;
   }
 }
 @media (min-width: 768px) {
   .page-7 {
     font-size: var(--font-small-d);
+  }
+  .page-7 .page-7__header {
+    padding-right: 0;
+  }
+  .page-7 .page-7__header .box {
+    border-left: var(--border-violet);
   }
   .page-7 .girl {
     display: initial;

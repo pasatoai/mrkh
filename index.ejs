@@ -86,7 +86,11 @@
         </div>
         <div class="page-brown page-3">
             <div class="page-3__header page-header">
-                <%= text.p3.header %>
+                <div class="header__left">
+                    <span class="header-title__title">
+                        <%= text.p3.header %>
+                    </span>
+                </div>
                 <a href="<%= text.p3.fileName %>" download="<%= text.p3.fileName %>" class='page_3__pdf-container'>
                     <img src="images/lang-toggle.svg" alt="Pobierz pdf">
                     <span class="dl-anchor"></span>
@@ -140,7 +144,10 @@
         </div>
         <div class="page-violet page-4">
             <div class="page-4__header page-header">
-                <%= text.p4.header %>
+                <div>
+                    <%= text.p4.header %>
+                </div>
+                <div class="box"></div>
             </div>
             <img class="desktop-hidden surprise with-padding" src="images/surprise.png" alt="zaskoczenie">
             <div class="page-4__content with-padding">
@@ -176,7 +183,10 @@
         </div>
         <div class="page-brown page-5">
             <div class="page-5__header page-header">
-                <%= text.p5.header %>
+                <div>
+                    <%= text.p5.header %>
+                </div>
+                <div class="box"></div>
             </div>
             <img src="images/family.png" alt="Rodzina" class="family with-padding desktop-hidden">
             <div class="page-5__content with-padding">
@@ -204,24 +214,32 @@
         </div>
         <div class="page-violet page-6">
             <div class="page-6__header page-header">
-                <%= text.p6.header %>
-            </div>
-            <p class="with-padding">
-                <%= text.p6.dOffice %>
-            </p>
-            <section class="page-6__body with-padding">
-                <div class="page-6__links">
-                    <img src="images/office.png" alt="Gabinet Lekarski" class="office">
-                    <section class="dr-links">
-                        <% loopLinks(text.p6.offices) %>
-                    </section>
+                <div>
+                    <%= text.p6.header %>
                 </div>
-                <img hidden class="beads" src="images/beads.png" alt="beads">
+                <div class="box"></div>
+            </div>
+            <section class="page-6__left">
+                <p class="page-6__title with-padding">
+                    <%= text.p6.dOffice %>
+                </p>
+                <section class="page-6__body with-padding">
+                    <div class="page-6__links">
+                        <img src="images/office.png" alt="Gabinet Lekarski" class="office">
+                        <section class="dr-links">
+                            <% loopLinks(text.p6.offices) %>
+                        </section>
+                    </div>
+                    <img hidden class="beads" src="images/beads.png" alt="beads">
+                </section>
             </section>
         </div>
         <div class="page-brown page-7">
             <div class="page-7__header page-header">
-                <%= text.p7.header %>
+                <div>
+                    <%= text.p7.header %>
+                </div>
+                <div class="box"></div>
             </div>
             <div class="page-7__content with-padding">
                 <section class="infos">

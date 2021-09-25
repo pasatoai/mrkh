@@ -15,6 +15,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .box {
+      width: calc(var(--header-title-d-h) + 4px);
+      height: var(--header-title-d-h);
+      border-left: var(--border-brown);
+    }
   }
   .page-1 {
     font-size: 1.5em;
@@ -61,6 +67,10 @@
     .page-3__header {
       font-size: 2.5em;
       padding-right: 5px;
+
+      .header__left {
+        width: calc(100% - var(--header-title-d-h));
+      }
 
       a {
         border-left: var(--border-violet);
@@ -142,8 +152,7 @@
   .page-4 {
     font-size: var(--font-small-d);
     .page-4__header {
-      width: calc(100% - var(--header-title-d-h) - 2px);
-      border-right: var(--border-brown);
+      padding-right: 0;
     }
     .page-4__content {
       margin-right: calc(var(--header-title-d-h) + 2px);
@@ -193,9 +202,11 @@
   }
   .page-5 {
     font-size: var(--font-small-d);
+    .box {
+      border-left: var(--border-violet);
+    }
     .page-5__header {
-      width: calc(100% - var(--header-title-d-h) - 2px);
-      border-right: var(--border-violet);
+      padding-right: 0;
     }
     img.family-d,
     img.cursor {
@@ -220,6 +231,16 @@
   }
   .page-6 {
     font-size: var(--font-small-d);
+    .page-6__header {
+      padding-right: 0;
+    }
+    .page-6__left {
+      border-right: var(--border-brown);
+      width: calc(100% - var(--header-title-d-h) - 2px);
+    }
+    .page-6__title {
+      margin-top: 0;
+    }
     .page-6__body {
       display: flex;
       justify-content: space-between;
@@ -244,15 +265,21 @@
         height: 600px;
         width: auto;
       }
-      @media (max-width: 860px) {
+      @media (max-width: 960px) {
         .office {
-          height: 500px;
+          display: none;
         }
       }
     }
   }
   .page-7 {
     font-size: var(--font-small-d);
+    .page-7__header {
+      padding-right: 0;
+      .box {
+        border-left: var(--border-violet);
+      }
+    }
     .girl {
       display: initial;
       width: 60%;
