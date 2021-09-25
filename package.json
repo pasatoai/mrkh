@@ -4,27 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ENV=dev browser-refresh index.js ",
-    "start": "ENV=prod node index.js",
-    "sass": "sass --watch css:public",
-    "build": "cpy public/ dist/ --parents"
+    "dev": "npm-run-all --parallel sass http-server",
+    "start": "http-server",
+    "sass": "sass --watch scss:public/css",
+    "ejs": "node textTransform.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.3.3",
-    "browser-refresh": "^1.7.3",
-    "cpy": "^8.1.2",
-    "cpy-cli": "^3.1.1",
-    "postcss": "^8.3.6",
-    "pug": "^3.0.2",
-    "tailwind": "^4.0.0",
-    "tailwindcss": "^2.2.8"
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1",
+    "http-server": "^13.0.2",
     "sass": "^1.38.2"
   }
 }

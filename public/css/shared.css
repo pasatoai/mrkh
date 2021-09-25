@@ -42,11 +42,5 @@ body {
 .with-padding {
   padding: 25px 20px;
 }
-.social-margin.social-line {
-  display: flex;
-  align-items: center;
-}
-.social-margin.social-line span:first-child {
-  margin-right: 10px;
-}
+
 /*# sourceMappingURL=shared.css.map */
