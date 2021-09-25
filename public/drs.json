@@ -1,0 +1,198 @@
+{
+  "Białystok": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "prof. dr hab. n. med. Jacek Szamatowicz",
+        "Szpital/klinika": "Klinika ginekologii i ginekologii onkologicznej Uniwersyteckiego Szpitala Klinicznego",
+        "Adres": "ul. M. Skłodowskiej-Curie 24",
+        "Kontakt": "85 74 68 347"
+      }
+    ]
+  },
+  "Gdańsk": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Klaudia Barwińska-Pobłocka",
+        "Szpital/klinika": "Gabinety Zdrowia Klaudia i Klaudiusz Pobłoccy",
+        "Adres": "ul. Antoniego Słonimskiego 6/U9",
+        "Kontakt": "58 765 82 03 wew. 110"
+      }
+    ]
+  },
+  "Koluszki": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Barbara Michalak",
+        "Szpital/klinika": "---",
+        "Adres": "ul. Kasztanowa 6",
+        "Kontakt": "44 714 04 12"
+      }
+    ]
+  },
+  "Kraków": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "prof. dr hab. n. med. Robert Jach",
+        "Szpital/klinika": "SUPERIOR Centrum Medyczne",
+        "Adres": "ul.Czyżyńska 21/50,",
+        "Kontakt": "502 074 071"
+      }
+    ],
+    "Psycho": [
+      {
+        "Nazwa/Imię i Nazwisko": "Emilia Sygulska",
+        "Szpital/klinika": "",
+        "Adres": "ul. Marcina Borelowskiego-Lelewela 17/2",
+        "Kontakt": "emilia.sygulska@gmail.com"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Agnieszka Połomska",
+        "Szpital/klinika": "Gabinet psychologiczny Intuitio",
+        "Adres": "ul. Wiklinowa 3d",
+        "Kontakt": "509 217 789"
+      }
+    ]
+  },
+  "Lublin": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Monika Monist",
+        "Szpital/klinika": "Centrum Medyczne Chodźki",
+        "Adres": "ul. Chodźki 17/6",
+        "Kontakt": "81 740 55 55"
+      }
+    ]
+  },
+  "Łódź": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Grażyna Maciołek-Blewniewska",
+        "Szpital/klinika": "Instytut Centrum Zdrowia Matki Polki",
+        "Adres": "ul. Rzgowska 281/289",
+        "Kontakt": "42 271 10 00"
+      }
+    ]
+  },
+  "Poznań": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Karina Kapczuk",
+        "Szpital/klinika": "Klinika ginekologii i ginekologii onkologicznej Uniwersyteckiego Szpitala Klinicznego, Ginekologiczno-Położniczy Szpital Kliniczny UM",
+        "Adres": "ul. Polna 33",
+        "Kontakt": "61 659 9233"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Katarzyna Wachowiak-Ochmańska",
+        "Szpital/klinika": "---",
+        "Adres": "ul. Św. Marcina 23/6",
+        "Kontakt": "501 484 318"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Małgorzata Dembińska",
+        "Szpital/klinika": "NSZOZ Termedica",
+        "Adres": "os. Bolesława Chrobrego 101",
+        "Kontakt": "61 822 56 03"
+      }
+    ],
+    "Psycho": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr Katarzyna Walczyk-Matyja",
+        "Szpital/klinika": "Amonaria",
+        "Adres": "ul. Norwida 13/2",
+        "Kontakt": "570 629 580"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "dr Marta Szymańska-Pytlińska",
+        "Szpital/klinika": "Psychoterapia PORT",
+        "Adres": "ul. Ściegiennego 4/1",
+        "Kontakt": "609 772 893"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "",
+        "Szpital/klinika": "Centrum Terapii HAAK",
+        "Adres": "\nul. Limanowskiego 10/11",
+        "Kontakt": "\n570 552 331"
+      }
+    ]
+  },
+  "Ruda Śląska": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Angelika Wawrzkiewicz-Witkowska",
+        "Szpital/klinika": "Centrum Medyczne POST MEDICAL",
+        "Adres": "ul. Pocztowa 7",
+        "Kontakt": "32 707 44 99"
+      }
+    ]
+  },
+  "Warszawa": {
+    "Lekarze": [
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Kornelia Zaręba",
+        "Szpital/klinika": "Centrum Medyczne “Żelazna”",
+        "Adres": "ul. Żelazna 90",
+        "Kontakt": "przychodnia@szpitalzelazna.pl"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "dr n. med. Maja Świetlicka",
+        "Szpital/klinika": "Centrum Terapii Lew-Starowicz",
+        "Adres": "ul. Nowogrodzka 62 c lok. 42",
+        "Kontakt": "22 273 58 29"
+      }
+    ],
+    "Psycho": [
+      {
+        "Nazwa/Imię i Nazwisko": "Aleksandra Kraszczyńska",
+        "Szpital/klinika": "Psychologiczne S.O.S.",
+        "Adres": "ul. Wiśniowa 48",
+        "Kontakt": "690 060 950"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Patrycja Wonatowska",
+        "Szpital/klinika": "Instytut Pozytywnej Seksualności",
+        "Adres": "ul. Dobra 4/26",
+        "Kontakt": "792 001 710"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Sofia Wasilenko",
+        "Szpital/klinika": "Instytut Pozytywnej Seksualności",
+        "Adres": "ul. Dobra 4/26",
+        "Kontakt": "swasilenko@pozytywnaseksualnosc.pl"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Agnieszka Szeżyńska (coachka intymności)",
+        "Szpital/klinika": "Instytut Pozytywnej Seksualności",
+        "Adres": "ul. Dobra 4/26",
+        "Kontakt": "aszezynska@pozytywnaseksualnosc.pl"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Jan Topczewski",
+        "Szpital/klinika": "Stowarzyszenie Lambda Warszawa",
+        "Adres": "ul. Żurawia 24a",
+        "Kontakt": "22 628 52 22"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Jan Świerszcz",
+        "Szpital/klinika": "Otwarta Przestrzeń – centrum terapii",
+        "Adres": "ul. Wawelska 28",
+        "Kontakt": "511 028 333"
+      },
+      {
+        "Nazwa/Imię i Nazwisko": "Marta Płonecka",
+        "Szpital/klinika": "",
+        "Adres": "",
+        "Kontakt": "mplonecka@gmail.com"
+      }
+    ]
+  },
+  "Wrocław": {
+    "Psycho": [
+      {
+        "Nazwa/Imię i Nazwisko": "Rafal Lewandowski",
+        "Szpital/klinika": "W Przestrzeni - Instytut Rozwoju",
+        "Adres": "Plac Solny 16",
+        "Kontakt": "lewandowski.szkolenia@gmail.com"
+      }
+    ]
+  }
+}
