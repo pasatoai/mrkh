@@ -55,4 +55,50 @@ body {
   color: var(--color-orange);
 }
 
+.dr__body {
+  height: 100vh;
+  color: var(--color-brown);
+  background: var(--color-violet);
+}
+.dr__body * {
+  border-width: 2px !important;
+}
+.dr__body .header {
+  height: var(--header-title-d-h);
+  border-bottom: var(--border-brown);
+}
+.dr__body .header > div {
+  height: 100%;
+}
+.dr__body .header__left {
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 50%;
+  border-right: var(--border-brown);
+}
+.dr__body .header__left h1 {
+  margin-left: 30px;
+}
+.dr__body .header__left .kursor {
+  height: 60px;
+  transform: rotate(90deg);
+}
+.dr__body .content {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100% - var(--header-title-d-h));
+}
+@media (min-width: 1000px) {
+  .dr__body .content .spec {
+    width: 50%;
+    border-right: var(--border-brown);
+  }
+}
+@media (max-width: 1000px) {
+  .dr__body .content .spec {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=shared.css.map */

@@ -9,6 +9,7 @@ const read = promisify(fs.readFile);
 const write = promisify(fs.writeFile);
 
 const VIEW_FILE = __dirname + "/index.ejs";
+const DR_FILE = __dirname + "/dr.ejs";
 const DRS_DIR = __dirname + "/drs";
 
 const langToFileName = (lang) =>
@@ -67,17 +68,15 @@ const translationObj = (text, cities) =>
 
 const writeTranslations = () =>
   processDoctors().then(({ cities, details }) =>
-    read(VIEW_FILE, "utf-8")
-      .then((index) => [
-        ejs.render(index, translationObj(texts.PL, cities)),
-        ejs.render(index, translationObj(texts.EN, cities)),
+    Promise.all([read(VIEW_FILE, "utf-8"), read(DR_FILE, "utf-8")])
+      .then(([indexFile, drFile]) => [
+        ejs.render(indexFile, translationObj(texts.PL, cities)),
+        ejs.render(indexFile, translationObj(texts.EN, cities)),
+        ejs.render(drFile, { drDetails: JSON.stringify(details) }),
       ])
-      .then(([pl, en]) =>
+      .then(([pl, en, drs]) =>
         Promise.all([
-          write(
-            __dirname + "/public/drs.json",
-            JSON.stringify(details, null, 2)
-          ),
+          write(__dirname + "/public/dr.html", drs),
           write(__dirname + `/public/${langToFileName("PL")}`, pl),
           write(__dirname + `/public/${langToFileName("EN")}`, en),
         ])

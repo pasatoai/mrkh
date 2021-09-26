@@ -59,3 +59,50 @@ body {
     color: var(--color-orange);
   }
 }
+
+.dr__body {
+  height: 100vh;
+  color: var(--color-brown);
+  background: var(--color-violet);
+  * {
+    border-width: 2px !important;
+  }
+  .header {
+    height: var(--header-title-d-h);
+    border-bottom: var(--border-brown);
+  }
+  .header > div {
+    height: 100%;
+  }
+  .header__left {
+    display: flex;
+    align-items: center;
+    h1 {
+      margin-left: 30px;
+    }
+    .kursor {
+      height: 60px;
+      transform: rotate(90deg);
+    }
+    float: left;
+    width: 50%;
+    border-right: var(--border-brown);
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100% - var(--header-title-d-h));
+
+    @media (min-width: 1000px) {
+      .spec {
+        width: 50%;
+        border-right: var(--border-brown);
+      }
+    }
+    @media (max-width: 1000px) {
+      .spec {
+        width: 100%;
+      }
+    }
+  }
+}
