@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "http-server",
     "sass": "sass --watch scss:public/css",
-    "ejs": "node transform.js"
+    "ejs": "node transform.js",
+    "build": "sass scss:public/css & node transform.js"
   },
   "keywords": [],
   "author": "",

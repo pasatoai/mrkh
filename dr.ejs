@@ -5,16 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doktorzy</title>
-    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="/css/shared.css">
 </head>
 <body class="dr__body">
     <div class="header page-header">
         <div class="header__left with-padding">
-        </div>
-        <div class="header__right">
+            <div>
+                <a href="/#dr-links">
+                    <img class="kursor" src="/images/kursor.svg" alt="Powrot">
+                </a>
+            </div>
+            <h1><%= city %></h1>
         </div>
     </div>
-    <div id="drs"></div>
+    <div class="content">
+          <% Object.entries(drDetails).forEach(function([spec, details]){ %>
+            <div class="spec with-padding">
+                <h2><%= spec %></h2>
+                <section class="details">
+                    <% details.forEach(function(detail){ %>
+                        <div>
+                            <% Object.entries(detail).forEach(function([_k, v]){ %>
+                                <p> <%= v %> </p>
+                            <% }); %>
+                        </div>
+                    <% }); %>
+                </section>
+            </div>
+            <% }); %>
+    </div>
 </body>
 <script>
 </script>

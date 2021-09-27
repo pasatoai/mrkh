@@ -14,6 +14,15 @@
 
 // general
 
+.dr-links a {
+  text-decoration: none;
+  color: var(--color-brown);
+}
+.dr-links a:hover {
+  background: var(--color-orange);
+  color: var(--color-violet);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -87,21 +96,45 @@ body {
     float: left;
     width: 50%;
     border-right: var(--border-brown);
+    @media (max-width: 750px) {
+      border-right: none;
+    }
   }
   .content {
     display: flex;
     flex-wrap: wrap;
     min-height: calc(100% - var(--header-title-d-h));
 
+    .details {
+      font-size: 1.1em;
+      padding-left: 20px;
+    }
+    .details p:first-child {
+      text-decoration: underline;
+    }
+    .details > div {
+      margin-top: 40px;
+    }
+
     @media (min-width: 1000px) {
       .spec {
         width: 50%;
         border-right: var(--border-brown);
+        border-bottom: var(--border-brown);
+      }
+      .spec:last-child {
+        border-bottom: none;
+      }
+      .spec:nth-child(even) {
+        border-right: none;
       }
     }
     @media (max-width: 1000px) {
       .spec {
         width: 100%;
+      }
+      .spec {
+        border-top: var(--border-brown);
       }
     }
   }

@@ -7,6 +7,13 @@ const csv = require("csvtojson");
 const readDir = promisify(fs.readdir);
 const read = promisify(fs.readFile);
 const write = promisify(fs.writeFile);
+const rmDir = promisify(fs.rmdir);
+const mkdir = promisify(fs.mkdir);
+
+const mkdirOrClean = (path) =>
+  fs.existsSync(path)
+    ? rmDir(path, { recursive: true }).then(() => mkdir(path))
+    : mkdir(path);
 
 const VIEW_FILE = __dirname + "/index.ejs";
 const DR_FILE = __dirname + "/dr.ejs";
@@ -63,22 +70,36 @@ const processDoctors = () =>
     .then((drs) => drs.filter(validateDoctor))
     .then(reduceByCity);
 
-const translationObj = (text, cities) =>
-  Object.assign({}, { text }, { p6: { offices: cities } });
+const translationObj = (text, cities) => {
+  const retval = { text };
+  retval.text.p6.offices = cities;
+  return retval;
+};
+
+const drRenderObj = (city, drDetails) => {
+  return { city, drDetails };
+};
 
 const writeTranslations = () =>
   processDoctors().then(({ cities, details }) =>
     Promise.all([read(VIEW_FILE, "utf-8"), read(DR_FILE, "utf-8")])
-      .then(([indexFile, drFile]) => [
-        ejs.render(indexFile, translationObj(texts.PL, cities)),
-        ejs.render(indexFile, translationObj(texts.EN, cities)),
-        ejs.render(drFile, { drDetails: JSON.stringify(details) }),
+      .then(([indexTemplate, drTemplate]) => [
+        ejs.render(indexTemplate, translationObj(texts.PL, cities)),
+        ejs.render(indexTemplate, translationObj(texts.EN, cities)),
+        ...Object.entries(details).map(([city, drDetails]) => [
+          city,
+          ejs.render(drTemplate, drRenderObj(city, drDetails)),
+        ]),
       ])
-      .then(([pl, en, drs]) =>
+      .then(([pl, en, ...drs]) =>
         Promise.all([
-          write(__dirname + "/public/dr.html", drs),
           write(__dirname + `/public/${langToFileName("PL")}`, pl),
           write(__dirname + `/public/${langToFileName("EN")}`, en),
+          mkdirOrClean(__dirname + "/public/miasto").then(() => {
+            return drs.map(([city, rendered]) => {
+              write(__dirname + `/public/miasto/${city}.html`, rendered);
+            });
+          }),
         ])
       )
   );

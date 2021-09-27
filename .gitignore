@@ -1,2 +1,4 @@
 node_modules
-dist/
+public/miasto
+public/index.html
+public/index_en.html

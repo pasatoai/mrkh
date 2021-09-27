@@ -9,7 +9,7 @@
 
     loopLinks = function(pars) {
         pars.forEach(function(para) { %>
-            <a href="<%= `/dr.html?q=${para}` %>">
+            <a href="<%= `/miasto/${para}` %>">
                 <%= para %>
             </a> <% })
     };
@@ -212,7 +212,7 @@
                 </section>
             </div>
         </div>
-        <div class="page-violet page-6">
+        <div id="dr-links" class="page-violet page-6">
             <div class="page-6__header page-header">
                 <div>
                     <%= text.p6.header %>
