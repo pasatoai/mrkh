@@ -1,8 +1,9 @@
 const PL = {
+  includeDoctors: true,
   toggle: "en",
   toggleHref: "/index_en.html",
   p1: {
-    mainTitle: "bezpesktowe",
+    mainTitle: "Bezpesktowe",
     mainText: `
             Bezpestkowe to projekt założony
             w 2018 roku, którego celem jest nie
@@ -449,6 +450,8 @@ const PL = {
   p7: {
     header: `Kontakt`,
     support: `Wesprzyj nas na Zrzutka.pl`,
+    team: "Zespół:",
+    coop: "Współpraca:",
   },
   infoKeys: {
     phone: "Telefon",
@@ -456,16 +459,24 @@ const PL = {
   },
   infoVals: {
     email: "bezpestkowe@gmail.com",
+    zuza: "założycielka projektu Bezpestkowe",
+    agata: "współkoordynatorka projektu Bezpestkowe",
+    mikolaj: "projekt broszur",
+    zofka: "projekt strony internetowej",
+    kozlow: "ilustracje",
+    paulina: "redakcja i korekty tekstów",
+    magda: "przekład tekstów na język angielski",
   },
 };
 
 const EN = {
   ...PL,
+  includeDoctors: false,
   toggle: "pl",
   toggleHref: "/",
   ...{
     p1: {
-      mainTitle: "bezpestkowe",
+      mainTitle: "Bezpestkowe",
       mainText: `
         Bezpestkowe (pl. “seedless”) is a project founded in 2018 that aims not only to actively support people 
         with Mayer-Rokitansky-Küster-Hauser syndrome, but also to raise awareness and educate the public. 
@@ -649,6 +660,8 @@ const EN = {
     p7: {
       header: `Contact information`,
       support: `Support us at Zrzutka.pl`,
+      team: "Our team:",
+      coop: "Support:",
     },
     infoKeys: {
       phone: "Phone",
@@ -656,6 +669,13 @@ const EN = {
     },
     infoVals: {
       email: "bezpestkowe@gmail.com",
+      zuza: "Bezpestkowe founder",
+      agata: "Bezpestkowe co-coordinator",
+      mikolaj: "booklets",
+      zofka: "web design",
+      kozlow: "images and iconographics",
+      paulina: "text and correction",
+      magda: "english translations",
     },
   },
 };

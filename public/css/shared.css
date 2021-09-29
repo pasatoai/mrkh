@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: fontello;
-  src: url("/fontello.ttf") format("truetype");
+  src: url("/webFonts/fontello.ttf") format("truetype");
 }
 body {
   font-family: "Monarcha";
@@ -134,6 +134,10 @@ body {
   .dr__body .content .spec {
     border-top: var(--border-brown);
   }
+}
+
+.page-7 {
+  border-top: var(--border-violet);
 }
 
 /*# sourceMappingURL=shared.css.map */

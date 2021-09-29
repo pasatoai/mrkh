@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: fontello;
-  src: url("/fontello.ttf") format("truetype");
+  src: url("/webFonts/fontello.ttf") format("truetype");
 }
 
 body {
@@ -138,4 +138,8 @@ body {
       }
     }
   }
+}
+
+.page-7 {
+  border-top: var(--border-violet);
 }

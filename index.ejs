@@ -212,28 +212,30 @@
                 </section>
             </div>
         </div>
-        <div id="dr-links" class="page-violet page-6">
-            <div class="page-6__header page-header">
-                <div>
-                    <%= text.p6.header %>
-                </div>
-                <div class="box"></div>
-            </div>
-            <section class="page-6__left">
-                <p class="page-6__title with-padding">
-                    <%= text.p6.dOffice %>
-                </p>
-                <section class="page-6__body with-padding">
-                    <div class="page-6__links">
-                        <img src="images/office.png" alt="Gabinet Lekarski" class="office">
-                        <section class="dr-links">
-                            <% loopLinks(text.p6.offices) %>
-                        </section>
+        <% if (text.includeDoctors === true) { %>
+            <div id="dr-links" class="page-violet page-6">
+                <div class="page-6__header page-header">
+                    <div>
+                        <%= text.p6.header %>
                     </div>
-                    <img hidden class="beads" src="images/beads.png" alt="beads">
+                    <div class="box"></div>
+                </div>
+                <section class="page-6__left">
+                    <p class="page-6__title with-padding">
+                        <%= text.p6.dOffice %>
+                    </p>
+                    <section class="page-6__body with-padding">
+                        <div class="page-6__links">
+                            <img src="images/office.png" alt="Gabinet Lekarski" class="office">
+                            <section class="dr-links">
+                                <% loopLinks(text.p6.offices) %>
+                            </section>
+                        </div>
+                        <img hidden class="beads" src="images/beads.png" alt="beads">
+                    </section>
                 </section>
-            </section>
-        </div>
+            </div>
+        <% } %>
         <div class="page-brown page-7">
             <div class="page-7__header page-header">
                 <div>
@@ -261,6 +263,21 @@
                     <a class="social-margin support" href="https://zrzutka.pl/69j8ah">
                         <%= text.p7.support %>
                     </a>
+                    <p class="team">
+                        <div><%= text.p7.team %></div>
+                        <% infoLine("Zuzanna Piontke - ", text.infoVals.zuza) %>
+                        <% infoLine("Agata Śmiałkowska - ", text.infoVals.agata) %>
+                    </p>
+                    <p class="team">
+                        <div><%= text.p7.coop %></div>
+                        <% infoLine("Mikołaj Hałabuda - ", text.infoVals.mikolaj) %>
+                        <% infoLine("Zofka Kofta - ", text.infoVals.zofka) %>
+                        <% infoLine("Kozlow 7777 - ", text.infoVals.kozlow) %>
+                        <% infoLine("Paulina Puchalska - ", text.infoVals.paulina) %>
+                        <% infoLine("Magda Domagała - ", text.infoVals.magda) %>
+                        <% infoLine("Czarek Polak - ", "web development") %>
+                        <% infoLine("Aleksander Przeszło - ", "web development") %>
+                    </p>
                 </section>
                 <img hidden class="girl" src="images/girl.png" alt="Dziewczyna">
             </div>
