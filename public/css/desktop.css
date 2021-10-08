@@ -283,16 +283,20 @@
   .page-6 .page-6__body .page-6__links {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     width: 80%;
     align-items: initial;
   }
+  .page-6 .page-6__body .dr-links a:nth-child(odd) {
+    margin-right: 30px;
+  }
   .page-6 .page-6__body .dr-links {
-    padding: 0% 5%;
     display: block !important;
   }
   .page-6 .page-6__body .dr-links a {
+    margin-top: 0px !important;
     display: inline-block;
-    margin-top: 0px;
+    width: 200px;
   }
   .page-6 .page-6__body .beads {
     display: initial;

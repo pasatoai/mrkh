@@ -444,7 +444,7 @@ const PL = {
         ornare ligula id diam tincidunt posuere.
         Mauris ac dapibus ante. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit.
-        Nam in urna luctus, egestas sapien a,
+        Nam in urna luctus, egestas sapien a, varius magna.
       `,
   },
   p7: {
