@@ -3,7 +3,7 @@ const PL = {
   toggle: "en",
   toggleHref: "/index_en.html",
   p1: {
-    mainTitle: "Bezpesktowe",
+    mainTitle: "bezpesktowe",
     mainText: `
             Bezpestkowe to projekt założony
             w 2018 roku, którego celem jest nie
@@ -16,7 +16,7 @@ const PL = {
             od bezpestkowych tylko
         `,
     textBold: `
-        posiadaniem pestki, która przecież niczego nie definiuje
+        posiadaniem pestki, która przecież niczego nie definiuje.
     `,
   },
   p2: {
@@ -215,7 +215,7 @@ const PL = {
     `,
   },
   p4: {
-    header: `Jak rozmawiać o zespole MRKH`,
+    header: `Jak rozmawiać o zespole MRKH?`,
     paragraphs: [
       `
         Ważna jest weryfikacja osób, z którymi
@@ -623,10 +623,14 @@ const EN = {
         Talking through the mental blocks and finding solutions to them helps achieve sexual satisfaction.
         `,
         `
-        Each person, regardless of having or not having a seed, is built differently - our bodies, their appearance and functionality are different. 
-        If you are concerned that your sexual partner(s) will recognise that your vagina has been produced, we assure you that there is no need to worry - 
-        from a layperson's point of view, we are unable to recognise whether we are having sexual contact with a person who was born with 
-        a vagina or a person who has a neo-vagina.
+        Each person, regardless of having or not having a seed, is built differently - our bodies, their appearance and
+        functionality are different. If you are concerned that your sexual partner(s) will recognise that your vagina has been
+        produced, we assure you that there is no need to worry - from a layperson&#39;s point of view, we are unable to recognise
+        whether we are having sexual contact with a person who was born with a vagina or a person who has a neo-vagina.
+        Another consequence associated with MRKH syndrome is the inability to get pregnant and give birth. Usually when
+        MRKH is identified, this information is more difficult for parents/carers of Bezpestkowe to accept. Of course, having
+        MRKH does not preclude you from becoming a parent (that is of course if you want to become one at all). There are
+        different ways to do this:
         `,
         `
         Another consequence associated with MRKH syndrome is the inability to get pregnant and give birth. Usually when MRKH is identified, this information is more difficult for parents/carers of Bezpestkowe to accept. Of course, having MRKH does not preclude you from becoming a parent (that is of course if you want to become one at all). There are different ways to do this:

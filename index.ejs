@@ -69,7 +69,7 @@
             </div >
             <p class="content with-padding"> 
                 <%= text.p1.mainText %>
-                <span class="with-bold">
+                <span>
                     <%= text.p1.textBold %>
                 </span>
             </p>
@@ -198,6 +198,9 @@
                         <p>
                             <%- text.p5.paragraphs[1] %>
                         </p>
+                        <p>
+                            <%- text.p5.paragraphs[2] %>
+                        </p>
                     </section>
                     <img hidden class="family-d" src="images/family.png" alt="Rodzina">
                 </section>
@@ -250,15 +253,13 @@
                         <span>E-mail</span>
                         <a href="mailto:<%= text.infoVals.email %>"><%= text.infoVals.email %></a>
                     </div>
-                    <div class="social-margin social-line">
+                    <div  class="social-margin social-line">
                         <span class="icon icon-insta"></span>
-                        <span>@bezpestkowe</span>
+                        <a href="https://www.instagram.com/bezpestkowe/">@bezpestkowe</a>
                     </div>
                     <div class="social-margin social-line">
                         <span class="icon icon-fb"></span>
-                        <span>
-                            <%= text.infoKeys.joinAtFb %>
-                        </span>
+                        <a href="https://www.facebook.com/groups/2273363222909730/"><%= text.infoKeys.joinAtFb %></a>
                     </div>
                     <a class="social-margin support" href="https://zrzutka.pl/69j8ah">
                         <%= text.p7.support %>

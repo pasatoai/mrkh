@@ -2,6 +2,16 @@
   * {
     border-width: 2px !important;
   }
+  body {
+    background: var(--color-brown);
+  }
+  body > div {
+    position: relative;
+    top: -7px;
+  }
+  body > div:first-child {
+    position: initial;
+  }
   .desktop-hidden {
     display: none;
   }
@@ -10,7 +20,6 @@
     width: 100px;
   }
   .page-header {
-    font-family: "Monarcha-Bold";
     height: var(--header-title-d-h) !important;
     display: flex;
     align-items: center;
@@ -33,6 +42,9 @@
     .header__right {
       width: var(--header-title-d-h);
       height: var(--header-title-d-h);
+      img {
+        height: 90%;
+      }
     }
     .content {
       @media (max-width: 1050px) {
@@ -274,6 +286,7 @@
       top: 25px;
       margin-left: -100px;
       width: 60%;
+      height: 100%;
     }
     .page-7__content {
       display: flex;

@@ -142,4 +142,7 @@ body {
 
 .page-7 {
   border-top: var(--border-violet);
+  a {
+    color: inherit;
+  }
 }

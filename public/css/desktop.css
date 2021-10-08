@@ -3,6 +3,19 @@
     border-width: 2px !important;
   }
 
+  body {
+    background: var(--color-brown);
+  }
+
+  body > div {
+    position: relative;
+    top: -7px;
+  }
+
+  body > div:first-child {
+    position: initial;
+  }
+
   .desktop-hidden {
     display: none;
   }
@@ -13,7 +26,6 @@
   }
 
   .page-header {
-    font-family: "Monarcha-Bold";
     height: var(--header-title-d-h) !important;
     display: flex;
     align-items: center;
@@ -37,6 +49,9 @@
   .page-1 .header__right {
     width: var(--header-title-d-h);
     height: var(--header-title-d-h);
+  }
+  .page-1 .header__right img {
+    height: 90%;
   }
   .page-1 .content {
     width: calc(100% - 40% - var(--header-title-d-h) + 2px);
@@ -308,6 +323,7 @@
     top: 25px;
     margin-left: -100px;
     width: 60%;
+    height: 100%;
   }
   .page-7 .page-7__content {
     display: flex;

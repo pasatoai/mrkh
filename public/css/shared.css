@@ -139,5 +139,8 @@ body {
 .page-7 {
   border-top: var(--border-violet);
 }
+.page-7 a {
+  color: inherit;
+}
 
 /*# sourceMappingURL=shared.css.map */
