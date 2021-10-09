@@ -3,7 +3,7 @@ const PL = {
   toggle: "en",
   toggleHref: "/index_en.html",
   p1: {
-    mainTitle: "bezpesktowe",
+    mainTitle: "bezpestkowe",
     mainText: `
             Bezpestkowe to projekt założony
             w 2018 roku, którego celem jest nie

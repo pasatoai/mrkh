@@ -76,6 +76,10 @@
     }
   }
   .page-3 {
+    .pdf-text {
+      font-family: Monarcha !important;
+      font-size: 0.9em;
+    }
     .page-3__header {
       font-size: 2.5em;
       padding-right: 5px;
@@ -235,6 +239,7 @@
       padding-right: 0;
     }
     .page-6__left {
+      padding-top: 25px;
       border-right: var(--border-brown);
       width: calc(100% - var(--header-title-d-h) - 2px);
     }
