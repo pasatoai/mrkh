@@ -476,7 +476,7 @@ const EN = {
   toggleHref: "/",
   ...{
     p1: {
-      mainTitle: "Bezpestkowe",
+      mainTitle: "bezpestkowe",
       mainText: `
         Bezpestkowe (pl. “seedless”) is a project founded in 2018 that aims not only to actively support people 
         with Mayer-Rokitansky-Küster-Hauser syndrome, but also to raise awareness and educate the public. 
