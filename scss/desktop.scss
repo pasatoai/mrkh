@@ -42,9 +42,6 @@
     .header__right {
       width: var(--header-title-d-h);
       height: var(--header-title-d-h);
-      img {
-        height: 90%;
-      }
     }
     .content {
       @media (max-width: 1050px) {

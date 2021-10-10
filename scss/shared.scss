@@ -37,8 +37,22 @@ body {
   margin: 0;
 }
 
+body > div {
+  position: relative;
+  top: -7px;
+}
+body > div:first-child {
+  position: initial;
+}
+
 .with-bold {
   font-family: "Monarcha-Bold";
+}
+
+.header__right {
+  img {
+    height: 90%;
+  }
 }
 
 .page-brown {
