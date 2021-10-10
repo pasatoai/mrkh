@@ -2,5 +2,3 @@ node_modules
 public/miasto
 public/index.html
 public/index_en.html
-public/css/*.css
-public/css/*.css.map

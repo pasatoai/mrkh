@@ -1,0 +1,161 @@
+.droplet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.page-1 .header {
+  height: var(--header-title-h);
+  border-bottom: var(--border-violet);
+}
+.page-1 .header__left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  float: left;
+  width: calc(100% - var(--header-title-h));
+  font-size: 2em;
+  font-weight: bolder;
+}
+.page-1 .header__left img {
+  margin-left: 3px;
+  margin-right: 17px;
+}
+.page-1 .header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  float: left;
+  width: var(--header-title-h);
+  border-left: var(--border-violet);
+  height: var(--header-title-h);
+  position: relative;
+}
+.page-1 .header__right span {
+  font-weight: bolder;
+  position: absolute;
+}
+.page-1 .content {
+  font-size: var(--font-medium);
+  border-bottom: var(--border-violet);
+  margin: 0;
+}
+.page-1 .apricots {
+  width: 100%;
+}
+
+.page-2 p:first-child {
+  margin-top: 0;
+}
+.page-2 .content {
+  font-size: var(--font-medium-sm);
+}
+.page-2 .footer {
+  font-size: 0.7em;
+}
+
+.page-3 .page-3__header {
+  font-size: 2em;
+  border-bottom: var(--border-violet);
+  padding: 10px 15px;
+  position: relative;
+}
+.page-3 .page-3__header .page_3__pdf-container {
+  text-decoration: none;
+  color: var(--color-violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .page-3 .page-3__header .page_3__pdf-container {
+    font-size: 0.5em;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    transform: translateY(50%);
+  }
+}
+.page-3 .page-3__header .page_3__pdf-container img {
+  position: absolute;
+  height: 100%;
+}
+.page-3 .page-3__header .page_3__pdf-container span {
+  font-family: fontello;
+  z-index: 2;
+}
+.page-3 .page-3__header .page_3__pdf-container .dl-anchor:before {
+  content: "\f02e";
+}
+
+.page-4 .page-4__header {
+  font-size: 2em;
+  border-bottom: var(--border-brown);
+  padding: 10px 15px;
+}
+.page-4 .surprise {
+  width: 100%;
+}
+
+.page-5 .page-5__header {
+  font-size: 2em;
+  border-bottom: var(--border-violet);
+  padding: 10px 15px;
+}
+.page-5 .family {
+  width: 100%;
+}
+
+.page-6 .page-6__header {
+  font-size: 2em;
+  border-bottom: var(--border-brown);
+  padding: 10px 15px;
+}
+.page-6 .page-6__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-6 .page-6__links .dr-links {
+  display: flex;
+  flex-direction: column;
+}
+.page-6 .page-6__links a {
+  font-size: 1.3em;
+  padding: 10px;
+  border: 2px solid var(--color-brown);
+  text-align: center;
+  margin: 20px 0px;
+}
+.page-6 .office {
+  width: 60%;
+}
+
+.page-7 .page-7__header {
+  font-size: 2em;
+  border-bottom: var(--border-violet);
+  padding: 10px 15px;
+}
+.page-7 .icon {
+  font-family: fontello;
+}
+.page-7 .icon-insta:before {
+  content: "\f16d";
+}
+.page-7 .icon-fb:before {
+  content: "\f09a";
+}
+.page-7 .social-margin {
+  margin: 10px 0px;
+}
+.page-7 .support {
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=mobile.css.map */
