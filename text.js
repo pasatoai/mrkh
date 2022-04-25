@@ -452,6 +452,7 @@ const PL = {
     support: `Wesprzyj nas na Patronite.pl`,
     team: "Zespół:",
     coop: "Współpraca:",
+    about: "Dane fundacji:"
   },
   infoKeys: {
     phone: "Telefon",
@@ -666,6 +667,7 @@ const EN = {
       support: `Support us at Patronite.pl`,
       team: "Our team:",
       coop: "Support:",
+      about: "About us:"
     },
     infoKeys: {
       phone: "Phone",
