@@ -449,7 +449,7 @@ const PL = {
   },
   p7: {
     header: `Kontakt`,
-    support: `Wesprzyj nas na Zrzutka.pl`,
+    support: `Wesprzyj nas na Patronite.pl`,
     team: "Zespół:",
     coop: "Współpraca:",
   },
@@ -663,7 +663,7 @@ const EN = {
     },
     p7: {
       header: `Contact information`,
-      support: `Support us at Zrzutka.pl`,
+      support: `Support us at Patronite.pl`,
       team: "Our team:",
       coop: "Support:",
     },
