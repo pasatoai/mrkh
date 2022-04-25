@@ -8,7 +8,7 @@ const PL = {
             Bezpestkowe to projekt założony
             w 2018 roku, którego celem jest nie
             tylko aktywne wspieranie osób z
-            zespołem Mayera-Rokitansky’egoKüstera-Hausera, ale również
+            zespołem Mayera-Rokitansky’ego-Küstera-Hausera, ale również
             uświadamianie i edukowanie
             społeczeństwa. Nazwa nawiązuje do
             pestki owocu i przyrównania jej do
