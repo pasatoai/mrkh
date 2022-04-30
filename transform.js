@@ -80,6 +80,8 @@ const drRenderObj = (city, drDetails) => {
   return { city, drDetails };
 };
 
+// bierzemy index.ejs i wstawiawmy wartosci z 
+
 const writeTranslations = () =>
   processDoctors().then(({ cities, details }) =>
     Promise.all([read(VIEW_FILE, "utf-8"), read(DR_FILE, "utf-8")])

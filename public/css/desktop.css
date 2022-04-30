@@ -323,20 +323,21 @@
   .page-7 .page-7__header .box {
     border-left: var(--border-violet);
   }
-  .page-7 .girl {
-    display: initial;
-    position: relative;
-    top: 25px;
-    margin-left: -100px;
-    width: 60%;
-    height: 100%;
-  }
   .page-7 .page-7__content {
     display: flex;
     justify-content: space-between;
   }
   .page-7 .icon {
     font-size: 2em;
+  }
+}
+@media (min-width: 1115px) {
+  .girl {
+    display: initial;
+    position: absolute;
+    bottom: 0px;
+    height: 86%;
+    right: 0px;
   }
 }
 

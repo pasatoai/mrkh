@@ -456,7 +456,8 @@ const PL = {
   },
   infoKeys: {
     phone: "Telefon",
-    joinAtFb: "Dołącz do nas na Facebooku",
+    bezpestkoweGroup: "Bezpestkowe",
+    supportGroup: "Grupa wsparcia"
   },
   infoVals: {
     email: "bezpestkowe@gmail.com",
@@ -467,6 +468,7 @@ const PL = {
     kozlow: "ilustracje",
     paulina: "redakcja i korekty tekstów",
     magda: "przekład tekstów na język angielski",
+    maria: "rachunkowość i księgowość"
   },
 };
 
@@ -671,7 +673,8 @@ const EN = {
     },
     infoKeys: {
       phone: "Phone",
-      joinAtFb: "Join us at Facebook",
+      bezpestkoweGroup: "Bezpestkowe",
+      supportGroup: "Support group",
     },
     infoVals: {
       email: "bezpestkowe@gmail.com",
@@ -682,6 +685,7 @@ const EN = {
       kozlow: "images and iconographics",
       paulina: "text and correction",
       magda: "english translations",
+      maria: "bookkeeping and accounting"
     },
   },
 };

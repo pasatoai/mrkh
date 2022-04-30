@@ -81,7 +81,8 @@
     },
     "infoKeys": {
       "phone": "Telefon",
-      "joinAtFb": "Dołącz do nas na Facebooku"
+      "bezpestkoweGroup": "Bezpestkowe",
+      "supportGroup": "Grupa wsparcia"
     },
     "infoVals": {
       "email": "bezpestkowe@gmail.com"
