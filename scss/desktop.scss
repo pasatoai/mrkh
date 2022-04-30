@@ -87,12 +87,6 @@
 
       a {
         border-left: var(--border-violet);
-        font-size: 0.65em;
-        width: var(--header-title-d-h);
-        height: var(--header-title-d-h);
-        img {
-          padding: 9px;
-        }
       }
     }
     .page-3__content {
@@ -289,19 +283,35 @@
     .page-7__content {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
     }
     .icon {
       font-size: 2em;
     }
+    .statut {
+      width: 50px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  a.pdf-container {
+    font-size: 20px !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .page-7 .pdf-container {
+    position: relative;
+    right: 10px;
   }
 }
 
 @media (min-width: 1115px) {
-    .girl {
-      display: initial;
-      position: absolute;
-      bottom: 0px;
-      height: 86%;
-      right: 0px;
-    }
+  .girl {
+    display: initial;
+    position: absolute;
+    bottom: 0px;
+    height: 86%;
+    right: 0px;
+  }
 }

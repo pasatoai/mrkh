@@ -1,5 +1,6 @@
 const PL = {
   includeDoctors: true,
+  includeStatut: true,
   toggle: "en",
   toggleHref: "/index_en.html",
   p1: {
@@ -475,6 +476,7 @@ const PL = {
 const EN = {
   ...PL,
   includeDoctors: false,
+  includeStatut: false,
   toggle: "pl",
   toggleHref: "/",
   ...{

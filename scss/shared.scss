@@ -160,3 +160,25 @@ body > div:first-child {
     color: inherit;
   }
 }
+
+.pdf-container {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    position: absolute;
+    width: 80%;
+  }
+  span {
+    font-family: fontello;
+    z-index: 2;
+  }
+  .dl-anchor:before {
+    content: "\f02e";
+  }
+}

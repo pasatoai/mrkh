@@ -97,7 +97,7 @@
                         <%= text.p3.header %>
                     </span>
                 </div>
-                <a href="<%= text.p3.fileName %>" download="<%= text.p3.fileName %>" class='page_3__pdf-container'>
+                <a href="<%= text.p3.fileName %>" download="<%= text.p3.fileName %>" class='pdf-container'>
                     <img src="images/lang-toggle.svg" alt="Pobierz pdf">
                     <span class="dl-anchor"></span>
                     <span class="pdf-text">pdf</span>
@@ -294,6 +294,15 @@
                         <% infoLine("REGON - ", "521286817") %>
                     </p>
                 </section>
+                <% if (text.includeDoctors === true) { %>
+                    <div class="pdf-container-top">
+                        <a href="bezpestkowe_statut.pdf" download="bezpestkowe_statut.pdf" class='pdf-container'>
+                            <img src="images/lang-toggle.svg" alt="Statut">
+                            <span class="dl-anchor"></span>
+                            <span class="pdf-text">Statut</span>
+                        </a>
+                    </div>
+                <% } %>
                 <img hidden class="girl" src="images/girl.png" alt="Dziewczyna">
             </div>
         </div>
