@@ -31,7 +31,7 @@ const validateDoctor = (dr) =>
 
 const makeCsv = () =>
   csv({
-    delimiter: ",",
+    delimiter: ";",
     includeColumns:
       /(Miasto|Nazwa\/Imię i Nazwisko|Szpital\/klinika|Adres|Kontakt)/,
   });
@@ -80,7 +80,7 @@ const drRenderObj = (city, drDetails) => {
   return { city, drDetails };
 };
 
-// bierzemy index.ejs i wstawiawmy wartosci z 
+// bierzemy index.ejs i wstawiawmy wartosci z
 
 const writeTranslations = () =>
   processDoctors().then(({ cities, details }) =>

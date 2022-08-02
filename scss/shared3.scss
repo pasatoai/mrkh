@@ -162,6 +162,7 @@ body > div:first-child {
 }
 
 .pdf-container {
+  font-family: Monarcha !important;
   position: relative;
   text-decoration: none;
   color: var(--color-violet);
@@ -175,8 +176,10 @@ body > div:first-child {
     width: 80%;
   }
   span {
-    font-family: fontello;
     z-index: 2;
+  }
+  span:first-of-type {
+    font-family: fontello;
   }
   .dl-anchor:before {
     content: "\f02e";

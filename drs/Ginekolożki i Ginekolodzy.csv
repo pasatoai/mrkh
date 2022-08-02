@@ -1,15 +1,15 @@
-Miasto,Nazwa/Imię i Nazwisko,Szpital/klinika,Adres,Kontakt,,liczba broszurek,,Łączna liczba broszur
-Białystok,prof. dr hab. n. med. Jacek Szamatowicz,Klinika ginekologii i ginekologii onkologicznej Uniwersyteckiego Szpitala Klinicznego,ul. M. Skłodowskiej-Curie 24,85 74 68 347,,30,,225
-Gdańsk,dr n. med. Klaudia Barwińska-Pobłocka,Gabinety Zdrowia Klaudia i Klaudiusz Pobłoccy,ul. Antoniego Słonimskiego 6/U9,58 765 82 03 wew. 110,,30,wysłane,
-,,,,,,,,
-Koluszki,dr n. med. Barbara Michalak,---,ul. Kasztanowa 6,44 714 04 12,,5,,
-Kraków,prof. dr hab. n. med. Robert Jach,SUPERIOR Centrum Medyczne,"ul.Czyżyńska 21/50, ",502 074 071,,30,wysłane,
-Lublin,dr n. med. Monika Monist,Centrum Medyczne Chodźki,ul. Chodźki 17/6,81 740 55 55,,5,,
-,,,,,,,,
-Łódź,dr n. med. Grażyna Maciołek-Blewniewska,Instytut Centrum Zdrowia Matki Polki ,ul. Rzgowska 281/289,42 271 10 00,,,,
-Poznań,dr n. med. Karina Kapczuk,"Klinika ginekologii i ginekologii onkologicznej Uniwersyteckiego Szpitala Klinicznego, Ginekologiczno-Położniczy Szpital Kliniczny UM ",ul. Polna 33,61 659 9233,,50,potwierdzone,Ruta
-Poznań,dr n. med. Katarzyna Wachowiak-Ochmańska,---,ul. Św. Marcina 23/6,501 484 318,,5,potwierdzone,Ruta
-Poznań,dr n. med. Małgorzata Dembińska,NSZOZ Termedica,os. Bolesława Chrobrego 101,61 822 56 03,,5,potwierdzone,Ruta
-Ruda Śląska,dr n. med. Angelika Wawrzkiewicz-Witkowska,Centrum Medyczne POST MEDICAL ,ul. Pocztowa 7,32 707 44 99,,5,,
-Warszawa,dr n. med. Kornelia Zaręba,Centrum Medyczne “Żelazna” ,ul. Żelazna 90,przychodnia@szpitalzelazna.pl,,30,wysłane,
-Warszawa,dr n. med. Maja Świetlicka,Centrum Terapii Lew-Starowicz,ul. Nowogrodzka 62 c lok. 42,22 273 58 29,,30,,
+Miasto;Nazwa/Imię i Nazwisko;Szpital/klinika;Adres;Kontakt;;liczba broszurek;;Łączna liczba broszur
+Białystok;prof. dr hab. n. med. Jacek Szamatowicz;Klinika ginekologii i ginekologii onkologicznej Uniwersyteckiego Szpitala Klinicznego;ul. M. Skłodowskiej-Curie 24;85 74 68 347;;30;;225
+Gdańsk;dr n. med. Klaudia Barwińska-Pobłocka;Gabinety Zdrowia Klaudia i Klaudiusz Pobłoccy;ul. Antoniego Słonimskiego 6/U9;58 765 82 03 wew. 110;;30;wysłane;
+;;;;;;;;
+Koluszki;dr n. med. Barbara Michalak;---;ul. Kasztanowa 6;44 714 04 12;;5;;
+Kraków;prof. dr hab. n. med. Robert Jach;SUPERIOR Centrum Medyczne;"ul.Czyżyńska 21/50; ";502 074 071;;30;wysłane;
+Lublin;dr n. med. Monika Monist;Centrum Medyczne Chodźki;ul. Chodźki 17/6;81 740 55 55;;5;;
+;;;;;;;;
+Łódź;dr n. med. Grażyna Maciołek-Blewniewska;Instytut Centrum Zdrowia Matki Polki ;ul. Rzgowska 281/289;42 271 10 00;;;;
+Poznań;dr n. med. Karina Kapczuk;"Klinika ginekologii i ginekologii onkologicznej Uniwersyteckiego Szpitala Klinicznego; Ginekologiczno-Położniczy Szpital Kliniczny UM ";ul. Polna 33;61 659 9233;;50;potwierdzone;Ruta
+Poznań;dr n. med. Katarzyna Wachowiak-Ochmańska;---;ul. Św. Marcina 23/6;501 484 318;;5;potwierdzone;Ruta
+Poznań;dr n. med. Małgorzata Dembińska;NSZOZ Termedica;os. Bolesława Chrobrego 101;61 822 56 03;;5;potwierdzone;Ruta
+Ruda Śląska;dr n. med. Angelika Wawrzkiewicz-Witkowska;Centrum Medyczne POST MEDICAL ;ul. Pocztowa 7;32 707 44 99;;5;;
+Warszawa;dr n. med. Kornelia Zaręba;Centrum Medyczne “Żelazna” ;ul. Żelazna 90;przychodnia@szpitalzelazna.pl;;30;wysłane;
+Warszawa;dr n. med. Maja Świetlicka;Centrum Terapii Lew-Starowicz;ul. Nowogrodzka 62 c lok. 42;22 273 58 29;;30;;

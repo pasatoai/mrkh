@@ -457,8 +457,8 @@ const PL = {
   },
   infoKeys: {
     phone: "Telefon",
-    bezpestkoweGroup: "Bezpestkowe",
-    supportGroup: "Grupa wsparcia"
+    bezpestkoweGroup: "Grupa dla osób Bezpestkowych",
+    supportGroup: "Grupa dla osób wspierających osoby Bezpestkowe"
   },
   infoVals: {
     email: "bezpestkowe@gmail.com",
@@ -675,8 +675,8 @@ const EN = {
     },
     infoKeys: {
       phone: "Phone",
-      bezpestkoweGroup: "Bezpestkowe",
-      supportGroup: "Support group",
+      bezpestkoweGroup: "Bezpestkowe group",
+      supportGroup: "Bezpestkowe support group",
     },
     infoVals: {
       email: "bezpestkowe@gmail.com",
