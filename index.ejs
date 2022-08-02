@@ -320,7 +320,11 @@
     </body>
 
     <script>
-        document.querySelector('[data-toggler]')
-            .addEventListener('click', console.log)
+        document
+            .querySelector('[data-toggler]')
+            .addEventListener('click', ({currentTarget}) => {
+                const de = currentTarget.getAttribute('data-expanded');
+                currentTarget.setAttribute('data-expanded', de === "false" ? "true": "false")
+            })
     </script>
 </html>

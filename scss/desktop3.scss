@@ -37,6 +37,9 @@
       height: var(--header-title-d-h);
       width: calc(3 * var(--header-title-d-h));
     }
+    .header__right[data-expanded="true"] {
+      transform: translateX(0);
+    }
     .content {
       @media (max-width: 1050px) {
         font-size: 1em;

@@ -149,6 +149,9 @@
       height: var(--header-title-h);
       transform: translateX(calc(2 * var(--header-title-h)));
     }
+    .header__right[data-expanded="true"] {
+      transform: translateX(0);
+    }
   }
 }
 
