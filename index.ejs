@@ -38,6 +38,14 @@
             </p>
         <%
     }
+
+    langPicker = function(lang) {
+        %>
+            <button class="lang-toggler">
+                <span> <%= lang %> </span>
+            </button>
+        <%
+    }
 %>
 
 <!DOCTYPE html>
@@ -63,15 +71,18 @@
         <div class="page-brown page-1">
             <div class="header page-header">
                 <div class="header__left">
-                    <img src="images/womb.svg" alt="Pestka"></img>
-                    <span class="header-title__title">
-                        <%= text.p1.mainTitle %>
-                    </span>
+                    <div class="logo-with-icon">
+                        <img src="images/womb.svg" alt="Pestka"></img>
+                        <span class="header-title__title">
+                            <%= text.p1.mainTitle %>
+                        </span>
+                    </div>
                 </div>
-                <a href="<%= text.toggleHref %>" class="header__right">
-                    <img src="images/lang-toggle.svg"></img>
-                    <span><%= text.toggle %></span>
-                </a>
+                <div class="header__right" data-toggler data-expanded="false">
+                    <% langPicker("PL") %>
+                    <% langPicker("UK") %>
+                    <% langPicker("UK") %>
+                </div>
             </div >
             <p class="content with-padding"> 
                 <%= text.p1.mainText %>

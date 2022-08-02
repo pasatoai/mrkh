@@ -5,13 +5,6 @@
   body {
     background: var(--color-brown);
   }
-  body > div {
-    position: relative;
-    top: -7px;
-  }
-  body > div:first-child {
-    position: initial;
-  }
   .desktop-hidden {
     display: none;
   }
@@ -40,8 +33,9 @@
       }
     }
     .header__right {
-      width: var(--header-title-d-h);
+      transform: translateX(calc(2 * var(--header-title-d-h)));
       height: var(--header-title-d-h);
+      width: calc(3 * var(--header-title-d-h));
     }
     .content {
       @media (max-width: 1050px) {
@@ -294,7 +288,7 @@
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   a.pdf-container {
     font-size: 18px !important;
     width: 100px !important;
