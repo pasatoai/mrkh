@@ -1,4 +1,5 @@
 const PL = {
+  language: "pl",
   includeDoctors: true,
   includeStatut: true,
   toggle: "en",
@@ -453,12 +454,12 @@ const PL = {
     support: `Wesprzyj nas na Patronite.pl`,
     team: "Zespół:",
     coop: "Współpraca:",
-    about: "Dane fundacji:"
+    about: "Dane fundacji:",
   },
   infoKeys: {
     phone: "Telefon",
     bezpestkoweGroup: "Grupa dla osób Bezpestkowych",
-    supportGroup: "Grupa dla osób wspierających osoby Bezpestkowe"
+    supportGroup: "Grupa dla osób wspierających osoby Bezpestkowe",
   },
   infoVals: {
     email: "bezpestkowe@gmail.com",
@@ -469,12 +470,13 @@ const PL = {
     kozlow: "ilustracje",
     paulina: "redakcja i korekty tekstów",
     magda: "przekład tekstów na język angielski",
-    maria: "rachunkowość i księgowość"
+    maria: "rachunkowość i księgowość",
   },
 };
 
 const EN = {
   ...PL,
+  language: "en",
   includeDoctors: false,
   includeStatut: false,
   toggle: "pl",
@@ -671,7 +673,7 @@ const EN = {
       support: `Support us at Patronite.pl`,
       team: "Our team:",
       coop: "Support:",
-      about: "About us:"
+      about: "About us:",
     },
     infoKeys: {
       phone: "Phone",
@@ -687,7 +689,7 @@ const EN = {
       kozlow: "images and iconographics",
       paulina: "text and correction",
       magda: "english translations",
-      maria: "bookkeeping and accounting"
+      maria: "bookkeeping and accounting",
     },
   },
 };

@@ -78,6 +78,11 @@ body > div:first-child {
 
 .page-1 {
   position: relative;
+  [data-is-current="true"] {
+    order: -1;
+    font-size: large;
+    font-weight: bold;
+  }
   .lang-toggles {
     display: flex;
     height: 100%;
@@ -111,9 +116,6 @@ body > div:first-child {
     display: flex;
     justify-content: center;
     border-left: var(--border-violet);
-    span {
-      font-weight: bolder;
-    }
   }
   .logo-with-icon {
     display: flex;

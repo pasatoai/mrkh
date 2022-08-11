@@ -39,9 +39,9 @@
         <%
     }
 
-    langPicker = function(lang) {
+    langPicker = function(lang, isCurrent) {
         %>
-            <button class="lang-toggler">
+            <button data-lang="<%= lang %>" data-toggler data-is-current="<%= isCurrent %>" class="lang-toggler">
                 <span> <%= lang %> </span>
             </button>
         <%
@@ -67,7 +67,7 @@
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta http-equiv="pragma" content="no-cache" />
     </head>
-    <body>
+    <body data-lang="<%= text.language %>">
         <div class="page-brown page-1">
             <div class="header page-header">
                 <div class="header__left">
@@ -78,10 +78,10 @@
                         </span>
                     </div>
                 </div>
-                <div class="header__right" data-toggler data-expanded="false">
-                    <% langPicker("PL") %>
-                    <% langPicker("UK") %>
-                    <% langPicker("UK") %>
+                <div class="header__right" data-expanded="false">
+                    <% langPicker("pl", text.language === "pl") %>
+                    <% langPicker("en", text.language === "en") %>
+                    <% langPicker("uk", text.language === "uk") %>
                 </div>
             </div >
             <p class="content with-padding"> 
@@ -320,11 +320,30 @@
     </body>
 
     <script>
-        document
-            .querySelector('[data-toggler]')
-            .addEventListener('click', ({currentTarget}) => {
-                const de = currentTarget.getAttribute('data-expanded');
-                currentTarget.setAttribute('data-expanded', de === "false" ? "true": "false")
+        const toggles = document.querySelectorAll('[data-toggler]')
+        const currentLanguage = document.body.getAttribute('data-lang');
+
+        const handleExpanded = () => {}
+
+        for (const t of toggles) {
+            t.addEventListener('click', ({currentTarget}) => {
+                const parent = currentTarget.parentElement;
+                const parentExpanded = parent.getAttribute('data-expanded');
+                const langClicked = currentTarget.getAttribute('data-lang');
+
+                if (langClicked === currentLanguage)
+                    return parent.setAttribute('data-expanded', parentExpanded === "true" ? "false": "true");
+
+                const newPath = {
+                    'en': 'index_en',
+                    'uk': 'index_uk',
+                    'pl': ''
+                }
+
+                window.location.pathname = langClicked in newPath
+                    ? newPath[langClicked]
+                    : newPath['pl'];
             })
+        }
     </script>
 </html>
