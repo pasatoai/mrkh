@@ -264,7 +264,12 @@
                 <section class="infos">
                     <% infoLine(text.infoKeys.phone, "+48 733 083 370") %>
                     <div class="info-line">
-                        <span>E-mail</span>
+                        <% if (text.language === "uk") { %>
+                            <span>Е-пошта</span>
+                        <% } %>
+                        <% if (text.language !== "uk") { %>
+                            <span>E-mail</span>
+                        <% } %>
                         <a href="mailto:<%= text.infoVals.email %>"><%= text.infoVals.email %></a>
                     </div>
                     <div  class="social-margin social-line">
@@ -283,20 +288,43 @@
                         <%= text.p7.support %>
                     </a>
                     <p class="team">
-                        <div><%= text.p7.team %></div>
-                        <% infoLine("Zuzanna Piontke - ", text.infoVals.zuza) %>
-                        <% infoLine("Agata Śmiałkowska - ", text.infoVals.agata) %>
+                        <% if (text.language === "uk") { %>
+                            <div>Колектив:</div>
+                            <% infoLine("Зузанна Піонтке - ", "засновниця проекту Безнасінні") %>
+                            <% infoLine("Агата Шмялковська - ", "співкоординаторка проекту Безнасінні") %>
+                        <% } %>
+
+                        <% if (text.language !== "uk") { %>
+                            <div><%= text.p7.team %></div>
+                            <% infoLine("Zuzanna Piontke - ", text.infoVals.zuza) %>
+                            <% infoLine("Agata Śmiałkowska - ", text.infoVals.agata) %>
+                        <% } %>
                     </p>
                     <p class="team">
                         <div><%= text.p7.coop %></div>
-                        <% infoLine("Mikołaj Hałabuda - ", text.infoVals.mikolaj) %>
-                        <% infoLine("Zofka Kofta - ", text.infoVals.zofka) %>
-                        <% infoLine("Kozlow - ", text.infoVals.kozlow) %>
-                        <% infoLine("Paulina Puchalska - ", text.infoVals.paulina) %>
-                        <% infoLine("Magda Domagała - ", text.infoVals.magda) %>
-                        <% infoLine("Czarek Polak - ", "web development") %>
-                        <% infoLine("Aleksander Przeszło - ", "web development") %>
-                        <% infoLine("Maria Zdulska - ", text.infoVals.maria) %>
+
+                        <% if (text.language === "uk") { %>
+                            <% infoLine("Міколай Халабуда  - ", "дизайн брошур") %>
+                            <% infoLine("Зофка Кофта - ", "дизайн сайту") %>
+                            <% infoLine("Козлов - ", "ілюстрації") %>
+                            <% infoLine("Пауліна Пухальська - ", "редагування та вичитка текстів") %>
+                            <% infoLine("Магда Домагала - ", "переклад текстів англійською мовою") %>
+                            <% infoLine("Чарек Полак - ", "веб-розробка") %>
+                            <% infoLine("Олександр Пшесло - ", "веб-розробка") %>
+                            <% infoLine("Марія Здульська - ", "бухгалтерія") %>
+                        <% } %>
+
+                        <% if (text.language !== "uk") { %>
+                            <% infoLine("Mikołaj Hałabuda - ", text.infoVals.mikolaj) %>
+                            <% infoLine("Zofka Kofta - ", text.infoVals.zofka) %>
+                            <% infoLine("Kozlow - ", text.infoVals.kozlow) %>
+                            <% infoLine("Paulina Puchalska - ", text.infoVals.paulina) %>
+                            <% infoLine("Magda Domagała - ", text.infoVals.magda) %>
+                            <% infoLine("Czarek Polak - ", "web development") %>
+                            <% infoLine("Aleksander Przeszło - ", "web development") %>
+                            <% infoLine("Maria Zdulska - ", text.infoVals.maria) %>
+                        <% } %>
+
                     </p>
                     <p class="team">
                         <div><%= text.p7.about %></div>
