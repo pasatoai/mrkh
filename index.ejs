@@ -323,8 +323,6 @@
         const toggles = document.querySelectorAll('[data-toggler]')
         const currentLanguage = document.body.getAttribute('data-lang');
 
-        const handleExpanded = () => {}
-
         for (const t of toggles) {
             t.addEventListener('click', ({currentTarget}) => {
                 const parent = currentTarget.parentElement;
@@ -343,7 +341,7 @@
                 window.location.pathname = langClicked in newPath
                     ? newPath[langClicked]
                     : newPath['pl'];
-            })
+            });
         }
     </script>
 </html>

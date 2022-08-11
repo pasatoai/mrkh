@@ -694,4 +694,224 @@ const EN = {
   },
 };
 
-module.exports = { PL, EN };
+const UK = {
+  ...PL,
+  language: "uk",
+  includeDoctors: false,
+  includeStatut: false,
+  toggle: "pl",
+  toggleHref: "/",
+  ...{
+    p1: {
+      mainTitle: "bezpestkowe",
+      mainText: `
+        Bezpestkowe (pl. “seedless”) is a project founded in 2018 that aims not only to actively support people 
+        with Mayer-Rokitansky-Küster-Hauser syndrome, but also to raise awareness and educate the public. 
+        The name refers to the seed of fruit and compares it to the uterus - stone fruit differs from seedless fruit only by 
+      `,
+      textBold: "having a seed, which after all does not define anything.",
+    },
+    p2: {
+      paragraphs: [
+        `
+            Harmful stereotypes still persist in our society - gender is often defined by the condition of our bodies. 
+            Those of us who feel feminine are well aware that the absence of a uterus does not take anything away from us, 
+            does not make us 'incomplete'. Our condition therefore proves that gender identity has no 
+            right to be defined by what our bodies have and don't have.
+        `,
+        `
+            MRKH syndrome does not subjugate Bezpestkowe’s femininity - it is about time for this to ring loud and clear, 
+            especially since as Bezpestkowe we are often excluded from the so-called 'women's circles', where bonds are 
+            often established on the foundation of shared experiences of menstruation and motherhood. 
+            Knowing what it feels like to be excluded from communities, we do our best to avoid creating a similar atmosphere within our own.
+        `,
+        `
+            Just as among the general population, there are non-binary, transgender and non-heteronormative people among us. 
+            For this perhaps small but no less significant group of Bezpestkowe, the preconception that we are all heterosexual 
+            women leads to an even stronger sense of exclusion. Out of respect for our diversity and the desire to create 
+            a community where everyone can be themselves regardless of gender identity and psychosexual orientation*, we use the 
+            words 'patient' and 'person' interchangeably and refrain from specifying the gender of Bezpestkowe’s potential partners.
+        `,
+        `
+            There are also intersex people among us. What is intersex? Inter-sex is an umbrella term for people who are born with a 
+            body that does not fit into social and/or medical definitions of typical female or male bodies. 
+            People with MRKH can (but don’t have to) identify under the intersex umbrella.
+        `,
+      ],
+      footer: `
+        *Gender identity and psychosexual orientation are terms commonly confused with each other, but they mean two completely separate things. 
+          Gender identity is a personal sense of belonging to a gender, an awareness of our inner self. 
+          Psychosexual orientation, on the other hand, describes our emotional, romantic or sexual attraction to people of a certain sex.
+      `,
+    },
+    p3: {
+      header: `What is MRKH syndrome and what does it involve?`,
+      fileName: `broszura_en.pdf`,
+      paragraphsPt1: [
+        `
+        MRKH syndrome is a genetically determined aplasia (organ failure) or hypoplasia (significant underdevelopment) of the 
+        uterus and vagina in a person with a female phenotype (ed. note: phenotype most simply explained means the appearance of a person) 
+        with karyotype 46.XX. It belongs to the group of rare diseases because, according to statistics, 
+        it affects about 1 in 4000 to 1 in 10 000 live born female newborns (most often it is said that it is about 1 in 4500 
+        live born female newborns). In Poland there are approx. 4400 people with MRKH, and about 40 Bezpestkowe are born each year.
+        `,
+        `
+        MRKH syndrome looks different in each person. It ranges from a complete absence of the uterus, to residual non-functioning uterine 
+        horns or residual uterine horns with a residual cavity with endometrium. Similarly, in the case of the vagina, 
+        it may be completely absent, present in a vestigial form or in the form of a recess, 
+        which in some individuals is large enough to become a fully functional vagina without medical intervention when intercourse is attempted.
+        `,
+        `
+        MRKH syndrome is complex - in medicine, anything called a syndrome is made up of many components. 
+        Defects of the uterus and vagina can therefore be accompanied by defects in other organs. 
+        The two systems most commonly affected are the urinary system and the skeletal system; 
+        in some cases there are also defects of the heart and great vessels, and some patients have hearing loss.
+        `,
+        `
+        There are therefore two types of MRKH syndrome: the first is diagnosed when the defect is limited to the reproductive system, 
+        i.e. the uterus and vagina, and the second when other defects coexist, such as congenital absence of a kidney and/or spinal defects. 
+        `,
+        `
+        Although Bezpestkowe do not menstruate, this does not equate to the absence of a menstrual cycle. 
+        People with MRKH syndrome have functioning ovaries that secrete hormones and produce ova, so Bezpestkowe ovulate and, 
+        hormonally speaking, go through all the stages of the cycle. The only difference is that there is no bleeding, 
+        although in the presence of a vestigial endometrium "micro-menstruation" may occur. 
+        Bezpestkowe will also go through menopause and may experience the many discomforts associated with it.
+        `,
+        `
+        Having MRKH does not equal being unable to have sex. Each person defines sex in their own way, and penetration is not necessary. 
+        However, if you choose to have penetrative sex, there are three ways to create a vagina. 
+        Remember to check with your health care provider before doing this. Whichever option you choose, 
+        successful and satisfying sex despite MRKH is possible. The quality of sex does not depend on whether your vagina is 
+        4 or 7 centimetres long, but on who you choose to have sex with.
+        `,
+      ],
+      belowDrop1: `
+        The first option is vaginal stretching with a partner - if you have someone you feel comfortable enough to do this with 
+        (in an atmosphere of tenderness and mutual trust), consider this option. It can give you a lot of pleasure.
+    `,
+      belowDrop2: `
+        The second is non-surgical vaginal shaping using dilators (known as dilation). 
+        It involves regular, gradual stretching of the existing vaginal canal. This option requires patience and determination, but is very rewarding. 
+        You can adapt the exercises to suit your needs. Remember that you are doing this for yourself, so you should enjoy the process.
+    `,
+      belowDrop3: `
+        The third option is surgery
+    `,
+    },
+    p4: {
+      header: `How to talk about MRKH?`,
+      paragraphs: [
+        `
+        An extremely important aspect is the way information about MRKH is communicated by the attending doctor. 
+        You can't tell a patient in a hurry that she won't menstruate, can't have intercourse, can't have children because it's... not true. 
+        Unfortunately, not only as Bezpestkowe, but as people in general, we most often remember exactly what we were told at our first gynecologist appointment. 
+        That's why it's important to be presented with alternatives as early as the identification of MRKH syndrome and not to treat being Bezpestkowe as a bad thing. 
+        It is important to talk rather than mechanically take action so that the patient is in control of the situation and 
+        aware of the decisions they is making that affect their body.
+        `,
+        `
+        Language matters! Because as a society we are not open to diversity or diverse sexual development, 
+        and MRKH is one of many cases of this diversity, an adequate narrative is important. 
+        If we talk about MRKH openly, without stigma or stigmatisation, we show that having MRKH is nothing bad and/or scary. 
+        It is not a sign of 'incompleteness' and it does not dictate someone’s worth. We try to avoid terms such as "'suffering', “ill” 
+        or “diagnosed with MRKH syndrome”. Instead, we say that one simply has MRKH.
+        `,
+        `
+        The most important issue of allyship (i.e. being a supportive person) is empathy, listening to the other person and sensing 
+        (or asking directly) if they even want to talk about the topic - not every person with MRKH wants to talk about it and not everyone 
+        needs to be an educator and activist. Therefore, asking (accompanied by the possibility of withdrawing from the conversation) 
+        is important: "Would you like to talk about it and are you comfortable with having this conversation?". 
+        It is important to give space, not to impose yourself with too many questions and to respect the boundaries set by Bezpestkowe. 
+        People with MRKH syndrome have the right to be tired of being asked, to not want to answer questions and to keep their experiences just to themselves.
+        `,
+        `
+        It is important to vet the people with whom we share our experiences, as there are some people who may not understand this and/or react in a negative way. 
+        Remember that your comfort and safety is most important, and that you are the one who sets the boundaries. 
+        `,
+        `
+        If you need to talk to someone about MRKH and you don't know how to get started, we recommend repeating in your head selected points you'd like to 
+        discuss so that in a real-life situation you're fluent and the words you say don't sound unfamiliar or feel awkward. 
+        It’s up to you to decide who you will be sharing your story with: a loved one, a fellow person with MRKH, a mental health professional 
+        (sexologist, psychologist, psychotherapist). You can reach out for different forms of support to suit your needs - look for supportive people in 
+        your immediate environment, consider joining a dedicated support group and/or receiving psychological support or psychotherapy.
+        `,
+      ],
+    },
+    p5: {
+      header: `Relationships and parenthood`,
+      paragraphs: [
+        `
+        MRKH puberty (up to the point of diagnosis) follows the same patterns as a cis women’s puberty, so Bezpestkowe usually take on 
+        female gender roles (because of their physical appearance, not MRKH syndrome).
+        `,
+        `
+        The role of a therapist is to support people with MRKH in engaging in sexual contacts, or to jointly identify the reason why they do not. 
+        Talking through the mental blocks and finding solutions to them helps achieve sexual satisfaction.
+        `,
+        `
+        Each person, regardless of having or not having a seed, is built differently - our bodies, their appearance and
+        functionality are different. If you are concerned that your sexual partner(s) will recognise that your vagina has been
+        produced, we assure you that there is no need to worry - from a layperson&#39;s point of view, we are unable to recognise
+        whether we are having sexual contact with a person who was born with a vagina or a person who has a neo-vagina.
+        Another consequence associated with MRKH syndrome is the inability to get pregnant and give birth. Usually when
+        MRKH is identified, this information is more difficult for parents/carers of Bezpestkowe to accept. Of course, having
+        MRKH does not preclude you from becoming a parent (that is of course if you want to become one at all). There are
+        different ways to do this:
+        `,
+        `
+        Another consequence associated with MRKH syndrome is the inability to get pregnant and give birth. Usually when MRKH is identified, this information is more difficult for parents/carers of Bezpestkowe to accept. Of course, having MRKH does not preclude you from becoming a parent (that is of course if you want to become one at all). There are different ways to do this:
+        `,
+      ],
+      belowDrop1: `
+      The first option is uterine transplantation, which is still considered an experimental treatment and for anatomical reasons cannot be performed 
+      on all patients with MRKH syndrome. Currently, there are more than ten children born to patients with MRKH in the world. 
+      To date, the best-known precedents are those of 2014 and 2017, when, in Sweden and Brazil respectively, patients with MRKH gave birth 
+      - in the first case from a uterus transplanted from a living donor, in the second from a deceased donor. 
+      The uterus is not a vital organ and is only transplanted for one pregnancy (it is removed after birth). 
+      Although the operation is very complicated and burdensome for both the donor and the recipient, it is possible.
+    `,
+      belowDrop2: `
+      A second option is surrogacy, which involves ectopic fertilisation with transfer of the embryo to a surrogate mother. 
+      In this way, a patient with MRKH syndrome can be a genetic parent, since from an ovarian point of view Bezpestkowe are fertile.
+    `,
+      belowDrop3: `
+      The third (and currently the only legally available in Poland) option is adoption, but in order to initiate the adoption procedure, 
+      one must be married for at least four years.
+    `,
+      lastParagraph: `
+      It is worth noting that there are individuals who fulfil the need for parenthood in other ways, e.g. by bonding with 
+      a person who has a child/children, by becoming involved as a carer, a close family friend, etc.
+    `,
+    },
+    p6: {
+      ...PL.p6,
+      header: `Doctors' offices`,
+    },
+    p7: {
+      header: `Contact information`,
+      support: `Support us at Patronite.pl`,
+      team: "Our team:",
+      coop: "Support:",
+      about: "About us:",
+    },
+    infoKeys: {
+      phone: "Phone",
+      bezpestkoweGroup: "Bezpestkowe group",
+      supportGroup: "Bezpestkowe support group",
+    },
+    infoVals: {
+      email: "bezpestkowe@gmail.com",
+      zuza: "Bezpestkowe founder",
+      agata: "Bezpestkowe co-coordinator",
+      mikolaj: "booklets",
+      zofka: "web design",
+      kozlow: "images and iconographics",
+      paulina: "text and correction",
+      magda: "english translations",
+      maria: "bookkeeping and accounting",
+    },
+  },
+};
+
+module.exports = { PL, EN, UK };
