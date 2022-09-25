@@ -120,6 +120,9 @@ body > div:first-child {
     border-left: var(--border-violet);
     border-bottom: var(--border-violet);
   }
+  .header__right * {
+    font-family: "Monarcha";
+  }
   .logo-with-icon {
     display: flex;
     align-items: center;
