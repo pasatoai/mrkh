@@ -23,7 +23,7 @@ const langToFileName = (lang) =>
   ({
     PL: "index.html",
     EN: "index_en.html",
-    UK: "index_uk.html",
+    UA: "index_ua.html",
   }[lang]);
 
 const drProps = ["Miasto", "Kontakt"];
@@ -92,17 +92,17 @@ const writeTranslations = () =>
       .then(([indexTemplate, drTemplate]) => [
         ejs.render(indexTemplate, translationObj(texts.PL, cities)),
         ejs.render(indexTemplate, translationObj(texts.EN, cities)),
-        ejs.render(indexTemplate, translationObj(texts.UK, cities)),
+        ejs.render(indexTemplate, translationObj(texts.UA, cities)),
         ...Object.entries(details).map(([city, drDetails]) => [
           city,
           ejs.render(drTemplate, drRenderObj(city, drDetails)),
         ]),
       ])
-      .then(([pl, en, uk, ...drs]) =>
+      .then(([pl, en, ua, ...drs]) =>
         Promise.all([
           write(__dirname + `/public/${langToFileName("PL")}`, pl),
           write(__dirname + `/public/${langToFileName("EN")}`, en),
-          write(__dirname + `/public/${langToFileName("UK")}`, uk),
+          write(__dirname + `/public/${langToFileName("UA")}`, ua),
           mkdirOrClean(__dirname + "/public/miasto").then(() => {
             return drs.map(([city, rendered]) => {
               write(__dirname + `/public/miasto/${city}.html`, rendered);

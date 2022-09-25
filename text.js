@@ -690,9 +690,9 @@ const EN = {
   },
 };
 
-const UK = {
+const UA = {
   ...PL,
-  language: "uk",
+  language: "ua",
   includeDoctors: false,
   includeStatut: false,
   ...{
@@ -915,4 +915,4 @@ const UK = {
   },
 };
 
-module.exports = { PL, EN, UK };
+module.exports = { PL, EN, UA };

@@ -57,9 +57,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">
-        <link rel="stylesheet" href="css/shared3.css">
-        <link rel="stylesheet" href="css/mobile3.css">
-        <link rel="stylesheet" href="css/desktop3.css">
+        <link rel="stylesheet" href="css/shared5.css">
+        <link rel="stylesheet" href="css/mobile5.css">
+        <link rel="stylesheet" href="css/desktop5.css">
 
         <meta http-equiv="cache-control" content="max-age=0" />
         <meta http-equiv="cache-control" content="no-cache" />
@@ -81,7 +81,7 @@
                 <div class="header__right" data-expanded="false">
                     <% langPicker("pl", text.language === "pl") %>
                     <% langPicker("en", text.language === "en") %>
-                    <% langPicker("uk", text.language === "uk") %>
+                    <% langPicker("ua", text.language === "ua") %>
                 </div>
             </div >
             <p class="content with-padding"> 
@@ -264,10 +264,10 @@
                 <section class="infos">
                     <% infoLine(text.infoKeys.phone, "+48 733 083 370") %>
                     <div class="info-line">
-                        <% if (text.language === "uk") { %>
+                        <% if (text.language === "ua") { %>
                             <span>Е-пошта</span>
                         <% } %>
-                        <% if (text.language !== "uk") { %>
+                        <% if (text.language !== "ua") { %>
                             <span>E-mail</span>
                         <% } %>
                         <a href="mailto:<%= text.infoVals.email %>"><%= text.infoVals.email %></a>
@@ -288,13 +288,13 @@
                         <%= text.p7.support %>
                     </a>
                     <p class="team">
-                        <% if (text.language === "uk") { %>
+                        <% if (text.language === "ua") { %>
                             <div>Колектив:</div>
                             <% infoLine("Зузанна Піонтке - ", "засновниця проекту Безнасінні") %>
                             <% infoLine("Агата Шмялковська - ", "співкоординаторка проекту Безнасінні") %>
                         <% } %>
 
-                        <% if (text.language !== "uk") { %>
+                        <% if (text.language !== "ua") { %>
                             <div><%= text.p7.team %></div>
                             <% infoLine("Zuzanna Piontke - ", text.infoVals.zuza) %>
                             <% infoLine("Agata Śmiałkowska - ", text.infoVals.agata) %>
@@ -303,7 +303,7 @@
                     <p class="team">
                         <div><%= text.p7.coop %></div>
 
-                        <% if (text.language === "uk") { %>
+                        <% if (text.language === "ua") { %>
                             <% infoLine("Міколай Халабуда  - ", "дизайн брошур") %>
                             <% infoLine("Зофка Кофта - ", "дизайн сайту") %>
                             <% infoLine("Козлов - ", "ілюстрації") %>
@@ -314,7 +314,7 @@
                             <% infoLine("Марія Здульська - ", "бухгалтерія") %>
                         <% } %>
 
-                        <% if (text.language !== "uk") { %>
+                        <% if (text.language !== "ua") { %>
                             <% infoLine("Mikołaj Hałabuda - ", text.infoVals.mikolaj) %>
                             <% infoLine("Zofka Kofta - ", text.infoVals.zofka) %>
                             <% infoLine("Kozlow - ", text.infoVals.kozlow) %>
@@ -362,7 +362,7 @@
 
                 const newPath = {
                     'en': 'index_en',
-                    'uk': 'index_uk',
+                    'ua': 'index_ua',
                     'pl': ''
                 }
 
