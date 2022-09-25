@@ -3,6 +3,7 @@ node_modules
 public/miasto
 public/index.html
 public/index_en.html
+public/index_ua.html
 
 public/css/**
 !public/css/MyFontsWebfontsKit.css
