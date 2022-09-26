@@ -8,9 +8,11 @@
 }
 
 .page-1 {
+  overflow: hidden;
   .header {
     height: var(--header-title-h);
     border-bottom: var(--border-violet);
+    position: relative;
   }
   .header__left {
     float: left;
